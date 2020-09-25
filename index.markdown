@@ -5,4 +5,4 @@
 layout: home
 ---
 
-Wellcome to Digimaker CMF documentation. 
+Wellcome to Digimaker CMF documentation.

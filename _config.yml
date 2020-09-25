@@ -27,36 +27,23 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:  digimakergo
 
+logo: "/assets/images/digimaker.png"
+
 # Build settings
 theme: just-the-docs
-remote_theme: pmarsceill/just-the-docs 
+remote_theme: pmarsceill/just-the-docs
 
 plugins:
   - jekyll-feed
 
 color_scheme: digimaker
 
-search_enabled: false
+aux_links:
+  "Github page":
+    - "//github.com/digimakergo/digimaker"
+  "Digimaker.com":
+    - "//digimaker.com"
 
-collections:
-  # Define a collection named "docs", its documents reside in the "_docs" directory
-  tutorial:
-    permalink: "/:collection/:path/"
-    output: true
-
-just_the_docs:
-  # Define which collections are used in just-the-docs
-  tutorial:
-    # Reference the "docs" collection
-    docs:
-      # Give the collection a name
-      name: Documentation
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
-      nav_exclude: false
-      # Exclude the collection from the search
-      # Supports true or false (default)
-      search_exclude: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Develop web site
+title: Customize EUI
 parent: Tutorial
-nav_order: 1
+nav_order: 30
 ---

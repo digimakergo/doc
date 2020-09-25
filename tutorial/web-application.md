@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Build web application
+title: Develop web application
 parent: Tutorial
 nav_order: 2
 ---
