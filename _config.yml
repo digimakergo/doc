@@ -41,8 +41,8 @@ color_scheme: digimaker
 aux_links:
   "Github page":
     - "//github.com/digimakergo/digimaker"
-  "Digimaker.com":
-    - "//digimaker.com"
+  "digimaker.com":
+    - "http://digimaker.com"
 
 
 # Exclude from processing.
