@@ -21,5 +21,8 @@ Current version:
 Server
 - Support join for non-location content, which is helpful also for eui's custom column & potencially graphic QL.
 
-EUI
+EUI/digimaker-ui
 - Support multi-image upload
+
+General
+- Implement administrative console for debug purpose.
