@@ -44,10 +44,10 @@ Install digimaker CMF to GOPath
 ### Start a project
 
 The easiest way to start a project below
-1) clone code from our demo project. Website demo project and rest demo project
-2) import database data
-3) run and check
-4) install backend
+1. clone code from our demo project. Website demo project and rest demo project
+2. import database data
+3. run and check
+4. install backend
 
 Then enjoy coding :)
 
