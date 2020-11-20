@@ -36,6 +36,7 @@ Some technologies used:
 Start a project and import `github.com/digimakergo/digimaker/core`, digimaker including all the dependencies will be installed.
 
 **Use GoPath**
+
 Install digimaker CMF to GOPath
 
 `go get -u github.com/digimakergo/digimaker`
