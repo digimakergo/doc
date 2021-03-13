@@ -1,6 +1,0 @@
----
-layout: page
-title: Develop web site
-parent: Tutorial
-nav_order: 1
----
