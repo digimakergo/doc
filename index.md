@@ -7,7 +7,7 @@ title: Home
 nav_order: 0
 ---
 
-## Welcome to Digimaker CMF documentation site.
+## Welcome to Digimaker CMF documentation
 
 Digimaker can be used to develop websites, web application, or just provide content service without specific client, or embed to another system to host content related feature.
 
