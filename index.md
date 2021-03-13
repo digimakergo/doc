@@ -23,15 +23,15 @@ Template
 - [Template filters](references/template-filters)
 - [Template override rule](references/template-override)
 
-Rest API
-- [Rest api](/references/rest)
-- [React library digimaker-ui](/references/digimaker-ui)
+Clien/Rest API
+- [Rest api](references/rest)
+- [React library digimaker-ui](references/digimaker-ui)
 
 Permission
-- [policies.json](/references/permission)
+- [policies.json](references/permission)
  
 Server side API
-- [Go API](/references/go)
+- [Go API](references/go)
 
 
 ### Roadmap
