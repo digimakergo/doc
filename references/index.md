@@ -2,7 +2,7 @@
 layout: page
 title: References
 permalink: /references/
-nav_order: 40
+nav_order: 15
 has_children: true
 ---
 
