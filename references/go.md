@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Digimaker Go api
+title: Go api
 parent: References
 permalink: /references/digimaker
 nav_order: 20
