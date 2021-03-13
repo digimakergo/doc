@@ -14,7 +14,7 @@ Digimaker can be used to develop websites, web application, or just provide cont
 We are evolving so check our [roadmap](/roadmap) or [community](#) to know our next step.
 
 ### Sample project & Installation
-Get project code and run from there: https://github.com/digimakergo/dmdemo
+Get project code and run from there: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo)
 
 
 ### [References](references/)
