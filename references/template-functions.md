@@ -17,7 +17,7 @@ Parameter(int): id of the locaiton.
 
 Result(ContentTyper): content which has the location id
 ```
-{% set content = dm.fetch_byid( 3 ) %}
+{{ dm.fetch_byid( 3 ).Name }}
 ```
 
 
@@ -28,7 +28,7 @@ Result(ContentTyper)
 
 Description: return the parent of the content
 ```
-{% set parent = dm.parent( content ) %}
+{{dm.parent( content ).Name}}
 ```
 
 ### dm.children
