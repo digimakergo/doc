@@ -26,7 +26,7 @@ Clien/Rest API
 - [React library digimaker-ui](references/digimaker-ui)
 
 Permission
-- [policies.json](references/permission)
+- [policies configuration](references/permission)
  
 Server side API
 - [Go API](references/go)
