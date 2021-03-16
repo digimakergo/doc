@@ -6,40 +6,61 @@ permalink: /references/go
 nav_order: 20
 ---
 
+Below is a overview Go API, the detail is in [Auto generated go documentation](https://pkg.go.dev/github.com/digimakergo/digimaker#section-documentation)
+
 ## Package core/query
 
 Fetch one content
-- FetchByID
-- FetchByUID
-- FetchByCID
-- FetchByCUID
-- Fetch
+
+| Function        | Comment       
+|:-------------|:---------------------|
+| FetchByID       |  Fetch a content by id  |
+| FetchByUID      |  Fetch a content by unique id  |
+| FetchByCID      |  Fetch a content by content id  |
+| FetchByCUID     |  Fetch a content by content unique id  |
+| Fetch           |  Fetch a content by condition  |
 
 
 Fetch List
-- SubList
-- ListWithUser
-- Children
-- List
+
+| Function        | Comment       
+|:-------------|:---------------------|
+| SubList       |  Fetch content list under a content, with permission considered  |
+| ListWithUser  |  Fetch content list with permission considered |
+| Children      |  Fetch children(direct children) with permission considered  |
+| List     |  Fetch list by conditions(without permission considered)  |
 
 Fetch subtree
-- SubTree
+
+| Function        | Comment       
+|:-------------|:---------------------|
+| SubTree        |  Fetch sub tree of a content  |
 
 ## Package core/handler
 
 Manipuliate content
-- Create
-- Update
-- Delete
+
+| Function        | Comment       
+|:-------------|:---------------------|
+| Create        |  Create content |
+| Update        |  Update a content |
+| DeleteByID        |  Delete a content |
+
 
 User
-- CanLogin
+
+| Function        | Comment       
+|:-------------|:---------------------|
+| CanLogin        |  Check if a user can login or not |
 
 
 ## Package core/permission
-- HasAccessTo
-- CanRead
-- CanUpdate
-- CanDelete
-- GetUserAccess
+
+| Function        | Comment       
+|:-------------|:---------------------|
+| HasAccessTo        |  Check if a user can accces to a operation |
+| CanRead        |  Check if a user can read a content |
+| CanUpdate        |  Check if a user can update a content |
+| CanDelete        |  Check if a user can delete a content |
+| GetUserAccess        |  Get user access list|
 
