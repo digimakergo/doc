@@ -6,7 +6,7 @@ permalink: /references/go
 nav_order: 20
 ---
 
-### Package core/query
+## Package core/query
 
 Fetch one content
 - FetchByID
