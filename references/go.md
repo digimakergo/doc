@@ -12,7 +12,7 @@ Below is a overview Go API, the detail is in [Auto generated go documentation](h
 
 Fetch one content
 
-| Function        | Comment       
+| Function        | Description       
 |:-------------|:---------------------|
 | FetchByID       |  Fetch a content by id  |
 | FetchByUID      |  Fetch a content by unique id  |
@@ -23,7 +23,7 @@ Fetch one content
 
 Fetch List
 
-| Function        | Comment       
+| Function        | Description       
 |:-------------|:---------------------|
 | SubList       |  Fetch content list under a content, with permission considered  |
 | ListWithUser  |  Fetch content list with permission considered |
@@ -32,7 +32,7 @@ Fetch List
 
 Fetch subtree
 
-| Function        | Comment       
+| Function        | Description       
 |:-------------|:---------------------|
 | SubTree        |  Fetch sub tree of a content  |
 
@@ -40,7 +40,7 @@ Fetch subtree
 
 Manipuliate content
 
-| Function        | Comment       
+| Function        | Description       
 |:-------------|:---------------------|
 | Create        |  Create content |
 | Update        |  Update a content |
@@ -49,14 +49,14 @@ Manipuliate content
 
 User
 
-| Function        | Comment       
+| Function        | Description       
 |:-------------|:---------------------|
 | CanLogin        |  Check if a user can login or not |
 
 
 ## Package core/permission
 
-| Function        | Comment       
+| Function        | Description       
 |:-------------|:---------------------|
 | HasAccessTo        |  Check if a user can accces to a operation |
 | CanRead        |  Check if a user can read a content |
