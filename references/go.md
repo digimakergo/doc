@@ -6,6 +6,8 @@ permalink: /references/go
 nav_order: 20
 ---
 
+### Package core/query
+
 Fetch one content
 - FetchByID
 - FetchByUID
@@ -23,6 +25,8 @@ Fetch List
 Fetch subtree
 - SubTree
 
+## Package core/handler
+
 Manipuliate content
 - Create
 - Update
@@ -32,11 +36,10 @@ User
 - CanLogin
 
 
-Permission
+## Package core/permission
 - HasAccessTo
 - CanRead
 - CanUpdate
 - CanDelete
 - GetUserAccess
-
 
