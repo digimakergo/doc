@@ -17,9 +17,7 @@ Parameter(int): id of the locaiton.
 
 Result(ContentTyper): content which has the location id
 ```
-{% raw %}
-{% set content = dm.fetch_byid( 3 ) %}
-{% endraw %}
+{% raw %}{% set content = dm.fetch_byid( 3 ) %}{% endraw %}
 ```
 
 
@@ -30,9 +28,7 @@ Result(ContentTyper)
 
 Description: return the parent of the content
 ```
-{% raw %}
-{%set parent = dm.parent( content ) %}
-{% endraw %}
+{% raw %}{%set parent = dm.parent( content ) %}{% endraw %}
 ```
 
 ### dm.children
@@ -60,9 +56,7 @@ Return: string
 Description: get nice url of a content, including site path/'prefix'
 
 ```
-{% raw %}
-{{dm.nice_url( content ) }}
-{% endraw %}
+{% raw %}{{dm.nice_url( content ) }}{% endraw %}
 ```
 
 
@@ -74,9 +68,7 @@ Return: string
 Description: add site path as prefix to the url. If it's '/' the last / will be removed.
 
 ```
-{% raw %}
-{{dm.root( 'mypage/profile' ) }}
-{% endraw %}
+{% raw %}{{dm.root( 'mypage/profile' ) }}{% endraw %}
 ```
 
 
