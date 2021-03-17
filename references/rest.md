@@ -6,9 +6,7 @@ permalink: /references/rest
 nav_order: 15
 ---
 
-{:toc}
-
-## Fetch
+## Content fetch
 
 ### content/get
 
