@@ -68,6 +68,39 @@ User
 
 ## Package core/db
 
+**Query**
+
+| Function        | Description       
+|:-------------|:---------------------|
+| BindContent        |  Bind content(s) with a condition |
+| CountContent        |  Count content(s) with a condition |
+| BindEntity        |  Check if a user can update a content |
+| Count        |   Count entity with a condition |
+| BindContentWithQuery        |  Bind conentent(s) with a query|
+| BindEntityWithQuery        |  Bind conentent(s) with a query|
+
+**Data operation**
+| Function        | Description       
+|:-------------|:---------------------|
+| Insert        |  Insert a record |
+| Update        |  Update a record |
+| Delete        |  Delete a record |
+
+
+**Condition**
+| Function        | Description       
+|:-------------|:---------------------|
+| Cond        |  Create a condition |
+| And        |  Logic and |
+| Or        |  Logic or |
+| EmptyCond        |  Empty condition |
+| TrueCond        |  Always true |
+| FalseCond        |  Always false |
+| Sort        |  Sort by |
+| Limit        |  Limit |
+
+
+
 ## Package core/util
 
 ## Package core/log
