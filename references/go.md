@@ -79,7 +79,7 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#
 |:-------------|:---------------------|
 | BindContent        |  Bind content(s) with a condition |
 | CountContent        |  Count content(s) with a condition |
-| BindEntity        |  Check if a user can update a content |
+| BindEntity        |  Bind entity(s) with a condition |
 | Count        |   Count entity with a condition |
 | BindContentWithQuery        |  Bind conentent(s) with a query|
 | BindEntityWithQuery        |  Bind conentent(s) with a query|
