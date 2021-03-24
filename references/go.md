@@ -80,6 +80,7 @@ User
 | BindEntityWithQuery        |  Bind conentent(s) with a query|
 
 **Data operation**
+
 | Function        | Description       
 |:-------------|:---------------------|
 | Insert        |  Insert a record |
@@ -88,6 +89,7 @@ User
 
 
 **Condition**
+
 | Function        | Description       
 |:-------------|:---------------------|
 | Cond        |  Create a condition |
