@@ -9,8 +9,9 @@ nav_order: 20
 Below is a overview Go API, the detail is in [Auto generated go documentation](https://pkg.go.dev/github.com/digimakergo/digimaker#section-documentation)
 
 ## Package core/query
+See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#pkg-examples)
 
-Fetch one content
+**Fetch one content**
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -21,7 +22,7 @@ Fetch one content
 | Fetch           |  Fetch a content by condition  |
 
 
-Fetch List
+**Fetch List**
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -30,15 +31,16 @@ Fetch List
 | Children      |  Fetch children(direct children) with permission considered  |
 | List     |  Fetch list by conditions(without permission considered)  |
 
-Fetch subtree
+**Fetch subtree**
 
 | Function        | Description       
 |:-------------|:---------------------|
 | SubTree        |  Fetch sub tree of a content  |
 
 ## Package core/handler
+See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#pkg-examples)
 
-Manipuliate content
+**Manipuliate content**
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -47,7 +49,7 @@ Manipuliate content
 | DeleteByID        |  Delete a content |
 
 
-User
+**User**
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -55,6 +57,7 @@ User
 
 
 ## Package core/permission
+See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#pkg-examples)
 
 | Function        | Description       
 |:-------------|:---------------------|
