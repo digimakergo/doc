@@ -68,6 +68,8 @@ User
 
 ## Package core/db
 
+See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#pkg-examples)
+
 **Query**
 
 | Function        | Description       
