@@ -17,7 +17,7 @@ Get project code and run from there: [https://github.com/digimakergo/dmdemo](htt
 
 ### [References](references/)
 Content model
- - [What is the content model&structure and how it is applied in digimaker](cotnent-model)
+ - [What is the content model&structure and how it is applied in digimaker](tutorial/content-model)
 
 Template
 - [Template functions](references/template-functions)
