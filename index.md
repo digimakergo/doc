@@ -33,6 +33,7 @@ Web app
  - How to use client library(digimaker-ui)
 
 Misc
+ - How to use online log/debug tool
  - Authorization explained
 
 
