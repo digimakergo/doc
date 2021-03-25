@@ -11,13 +11,20 @@ nav_order: 0
 
 We are evolving so check our [roadmap](/roadmap) or [community](#) to know our next step.
 
-### Sample project & Installation
-Get project code and run from there: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo)
+### Installation
+The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project exaplained code structure and basic apis.
+
+
+### Tutorials & articles
+ - [Content model explained & how to change](tutorial/content-model)
+ - How to add template functions & filters
+ - How to configure template overrides
+ - How to develop content handler
+ - How to develop fieldtype
+ - client library(digimaker-ui) explained
 
 
 ### [References](references/)
-Content model
- - [What is the content model&structure and how it is applied in digimaker](tutorial/content-model)
 
 Template
 - [Template functions](references/template-functions)
@@ -26,7 +33,7 @@ Template
 
 Clien/Rest API
 - [Rest api](references/rest)
-- [React library digimaker-ui](references/digimaker-ui)
+- [Client library digimaker-ui](references/digimaker-ui)
 
 Permission
 - [policies configuration](references/permission)
