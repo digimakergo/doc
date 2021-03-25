@@ -12,7 +12,7 @@ nav_order: 0
 We are evolving so check our [roadmap](/roadmap) or [community](#) to know our next step.
 
 ### Installation
-The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project exaplained code structure and basic apis.
+The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project readme has explained code structure and basic apis.
 
 
 ### Tutorials & articles
