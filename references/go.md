@@ -79,9 +79,12 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | CanRead        |  Check if a user can read a content |
 | CanUpdate        |  Check if a user can update a content |
 | CanDelete        |  Check if a user can delete a content |
-| GetUserAccess        |  Get user access list|
-
-
+| **Fetch policies and access**        |   |
+| GetUserAccess        |  Get user limit list|
+| GetUserPolicies        |  Get user polices|
+| **Operations**| |
+| AssignToUser        |  Get user polices|
+| RemoveAssignment        |  Remove the assignment|
 
 ## Database core/db
 
