@@ -19,7 +19,6 @@ Below is a overview Go API, the detail is in [Auto generated go documentation](h
 </details>
 
 ## Query content core/query
-See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#pkg-examples)
 
 Note: in all queries, the condition syntax as below is used
 
@@ -55,7 +54,6 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | [SubTree](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubTree)        |  Fetch sub tree of a content  |
 
 ## Operate contents core/handler
-See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#pkg-examples)
 
 **Manipulate content**
 
@@ -74,7 +72,6 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/han
 
 
 ## Permission core/permission
-See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#pkg-examples)
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -87,8 +84,6 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/per
 
 
 ## Database core/db
-
-*See all db examples on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#pkg-examples)*
 
 
 ### Conditions
