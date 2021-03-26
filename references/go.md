@@ -148,8 +148,8 @@ Below are low level data operations. Content manipulation normally is done via a
 | Function        | Description       
 |:-------------|:---------------------|
 | [Insert](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  Insert a record |
-| [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  Update a record |
-| [Delete](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  Delete a record |
+| [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Update)        |  Update a record |
+| [Delete](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Delete)        |  Delete a record |
 
 
 
