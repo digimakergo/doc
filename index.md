@@ -28,20 +28,13 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 ### [References](references/)
 
-Template
-- [Template functions](references/template-functions)
-- [Template filters](references/template-filters)
-- [Template override rule](references/template-override)
+Templates: [Template functions](references/template-functions), [Template filters](references/template-filters), [Override rule](references/template-override)
 
-Clien/Rest API
-- [Rest api](references/rest)
-- [Client library digimaker-ui](references/digimaker-ui)
+Client/Rest API: [Rest api](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
 
-Permission
-- [policies configuration](references/permission)
- 
-Server side API
-- [Go API](references/go)
+Permission: [policies configuration](references/permission)
+
+Server side: [Go API](references/go)
 
 
 ### Roadmap
