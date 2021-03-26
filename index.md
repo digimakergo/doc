@@ -16,23 +16,12 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 
 ### Tutorials & articles
-
-Content model
  - [Content model explained & how to configure](tutorial/content-model)
-
-Website templates
- - How to configure template overrides
- - How to add template functions & filters
- - How to develop templates
-
-Server side
- - How to develop content handler
- - How to develop fieldtype
-
-Web app
+ - How to develop website
+ - How to develop rest api
  - How to use client library(digimaker-ui)
-
-Misc
+ - How to develop content handler
+ - How to extend fieldtype
  - How to use online log/debug tool
  - Authorization explained
 
