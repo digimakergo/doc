@@ -78,7 +78,7 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/per
 
 ## Package core/db
 
-See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#pkg-examples)
+*See all db examples on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#pkg-examples)*
 
 
 **Conditions**
@@ -101,7 +101,7 @@ db.Cond("id", 3)
 db.Cond("id", []int{1, 3})
 ```
 
-[Here contains typical condition examples.](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#example-Cond)
+[Check here to see typical condition examples.](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#example-Cond)
 
 | Function        | Description       
 |:-------------|:---------------------|
