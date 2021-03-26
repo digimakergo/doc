@@ -4,6 +4,7 @@ title: Go api
 parent: References
 permalink: /references/go
 nav_order: 20
+has_toc: true
 ---
 
 Below is a overview Go API, the detail is in [Auto generated go documentation](https://pkg.go.dev/github.com/digimakergo/digimaker#section-documentation)
