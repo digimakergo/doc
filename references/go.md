@@ -138,12 +138,12 @@ If you want to fetch normal table data, `BindEntity` is the way to go. You can c
 | [BindEntityWithQuery](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindEntityWithQuery)        |  Bind conentent(s) with a query|
 
 ### Data operations
-
+Below are low level data operations. Content manipulation normally is done via apis in core/handler since they includes validation, permission check, relation cache update, versioning, etc.
 | Function        | Description       
 |:-------------|:---------------------|
-| Insert        |  Insert a record |
-| Update        |  Update a record |
-| Delete        |  Delete a record |
+| [Insert](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  Insert a record |
+| [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  Update a record |
+| [Delete](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  Delete a record |
 
 
 
