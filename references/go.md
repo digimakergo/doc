@@ -81,13 +81,15 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/per
 *See all db examples on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#pkg-examples)*
 
 
-**Conditions**
+### Conditions
 
 A condition expression includes field, operator and value(eg. "id > ", 10). Operator can be ignored the opeator is = or 'in'. Typical values are 1(int), "hello"(string), or int/string slices(in will be used when querying), or datetime. So the value should be a baisc types or struct implementing  [database.sql.driver.Valuer](https://golang.org/pkg/database/sql/driver/#Valuer).
 
 Supported operators: `">", ">=", "<", "==", "<=", "!=", "=", "in", "like"`. 
 
 *Note: "==" is for join between 2 targets.*
+
+It uses object-method style to build logical conditions.
 
 ```go
 //Below 2 are the same. Note: when using 'in/like' there should be a space before the operator
@@ -99,6 +101,9 @@ db.Cond("id", 3)
 
 //id in 1, 3
 db.Cond("id", []int{1, 3})
+
+//id in 1, 3 and author is 1
+db.Cond("id", []int{1, 3}).Cond("author", 1)
 ```
 
 [Check here to see typical condition examples.](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#example-Cond)
@@ -116,7 +121,7 @@ db.Cond("id", []int{1, 3})
 | [\<cond\>.Limit](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Limit)        |  Limit |
 | [\<cond\>.WithCount](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.WithCount)   |  Always include count in result regarless limit |
 
-**Query**
+### Queries
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -127,7 +132,7 @@ db.Cond("id", []int{1, 3})
 | [BindContentWithQuery](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindContentWithQuery)        |  Bind conentent(s) with a query|
 | [BindEntityWithQuery](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#BindEntityWithQuery)        |  Bind conentent(s) with a query|
 
-**Data operation**
+### Data operations
 
 | Function        | Description       
 |:-------------|:---------------------|
