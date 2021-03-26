@@ -122,6 +122,9 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 | [\<cond\>.WithCount](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.WithCount)   |  Always include count in result regarless limit |
 
 ### Queries
+There are 2 types of entities: content entities and normal entities. A content entity can be a combination from different tables. A typical normal entity is from a table.
+
+Most of content related query can be done via apis in #package-corequery.
 
 | Function        | Description       
 |:-------------|:---------------------|
