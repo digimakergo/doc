@@ -11,11 +11,11 @@ Below is a overview Go API, the detail is in [Auto generated go documentation](h
 ## Package core/query
 See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#pkg-examples)
 
-Note: in all queries, the condition syntax is used. eg. 
+Note: in all queries, the condition syntax as below is used
 
 ```go
 ids := []int{3, 4, 5, 7, 9, 10}
-condition := db.Cond("c.id", ids).Cond("author", 1).Sortby("modified desc").Limit(0, 1)
+condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("modified desc").Limit(0, 2)
 ```
 
 **Fetch one content**
@@ -85,14 +85,18 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#
 
 | Function        | Description       
 |:-------------|:---------------------|
-| Cond        |  Create a condition |
-| And        |  Logic and |
-| Or        |  Logic or |
-| EmptyCond        |  Empty condition |
-| TrueCond        |  Always true |
-| FalseCond        |  Always false |
-| Sortby        |  Sort by |
-| Limit        |  Limit |
+| [Cond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Cond)        |  Create a condition |
+| [And](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#And)       |  Logic and |
+| [Or](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Or)         |  Logic or |
+| [EmptyCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#EmptyCond)        |  Empty condition |
+| [TrueCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#TrueCond)        |  Always true |
+| [FalseCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#FalseCond)        |  Always false |
+| [\<cond\>.Cond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Cond)     |  Same as And&Cond combined |
+| [\<cond\>.And](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.And)   | Same as And with itself as first parameter |
+| [\<cond\>.Or](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Or)    | Same as Or with itself as first parameter |
+| [\<cond\>.Sortby](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Sortby)        |  Sort by |
+| [\<cond\>.Limit](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Limit)        |  Limit |
+| [\<cond\>].AlwaysCount](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.AlwaysCount)   |  Always include count in result regarless limit |
 
 **Query**
 
