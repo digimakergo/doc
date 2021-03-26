@@ -32,10 +32,10 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | Function        | Description       
 |:-------------|:---------------------|
 | [FetchByID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByID)       |  Fetch a content by id  |
-| [FetchByUID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByUID)      |  Fetch a content by unique id  |
-| [FetchByCID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCID)      |  Fetch a content by content id  |
-| [FetchByCUID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCUID)     |  Fetch a content by content unique id  |
+| [FetchByCID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCID)     |  Fetch a content by content id  |
 | [Fetch](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#Fetch)           |  Fetch a content by condition  |
+| [FetchByUID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByUID)     |  Fetch a content by unique id  |
+| [FetchByCUID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#FetchByCUID)   |  Fetch a content by content unique id  |
 
 
 ### Fetch List
