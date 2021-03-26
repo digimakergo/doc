@@ -15,11 +15,11 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 ### Tutorials & articles
  - [How to develop website](tutorial/)
- - [How to develop rest api](tutorial/)
- - [How to use client library(digimaker-ui) and rest api](tutorial/)
+ - [How to use client library(digimaker-ui) and rest api to develop web app](tutorial/)
+ - [How to develop own rest api](tutorial/)
  - [How to develop content handler](tutorial/)
  - [How to extend fieldtype](tutorial/)
- - [How to use online log/debug tool](tutorial/)
+ - [Online log/debug tool](tutorial/)
  - [Content model explained & how to configure](tutorial/content-model)
  - [Authorization explained](tutorial/)
 
