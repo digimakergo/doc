@@ -9,6 +9,15 @@ has_toc: true
 
 Below is a overview Go API, the detail is in [Auto generated go documentation](https://pkg.go.dev/github.com/digimakergo/digimaker#section-documentation)
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 ## Package core/query
 See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#pkg-examples)
 
