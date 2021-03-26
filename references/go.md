@@ -53,6 +53,12 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 |:-------------|:---------------------|
 | [SubTree](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubTree)        |  Fetch sub tree of a content  |
 
+### Fetch user/role
+
+| Function        | Description       
+|:-------------|:---------------------|
+| UserRole  |  Fetch users, roles based on condition |
+
 ## Operate contents core/handler
 
 **Manipulate content**
