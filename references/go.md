@@ -83,11 +83,11 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#
 
 **Condition**
 
+[Here contains typical condition examples.](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#example-Cond)
+
 | Function        | Description       
 |:-------------|:---------------------|
 | [Cond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Cond)        |  Create a condition |
-| [And](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#And)       |  Logic and |
-| [Or](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Or)         |  Logic or |
 | [EmptyCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#EmptyCond)        |  Empty condition |
 | [TrueCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#TrueCond)        |  Always true |
 | [FalseCond](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#FalseCond)        |  Always false |
