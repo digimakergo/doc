@@ -124,7 +124,9 @@ db.Cond("id", []int{1, 3}).Cond("author", 1)
 ### Queries
 There are 2 types of entities: content entities and normal entities. A content entity can be a combination from different tables. A typical normal entity is from a table.
 
-Most of content related query can be done via apis in #package-corequery.
+Most of content related query can be done via apis in [core/query](#package-corequery).
+
+If you want to fetch normal table data, `BindEntity` is the way to go. There is also a `db.Datamap` and `DatamapList` which can be used for binding entities to a maplist or map.
 
 | Function        | Description       
 |:-------------|:---------------------|
