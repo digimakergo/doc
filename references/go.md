@@ -18,7 +18,7 @@ Below is a overview Go API, the detail is in [Auto generated go documentation](h
 {:toc}
 </details>
 
-## Package core/query
+## Query content core/query
 See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#pkg-examples)
 
 Note: in all queries, the condition syntax as below is used
@@ -28,7 +28,7 @@ ids := []int{3, 4, 5, 7, 9, 10}
 condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("modified desc").Limit(0, 2)
 ```
 
-**Fetch one content**
+### Fetch one content
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -39,7 +39,7 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | [Fetch](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#Fetch)           |  Fetch a content by condition  |
 
 
-**Fetch List**
+### Fetch List
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -48,16 +48,16 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | [Children](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#Children)      |  Fetch children(direct children) with permission considered  |
 | [List](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#List)     |  Fetch list by conditions(without permission considered)  |
 
-**Fetch subtree**
+### Fetch subtree
 
 | Function        | Description       
 |:-------------|:---------------------|
 | [SubTree](https://pkg.go.dev/github.com/digimakergo/digimaker/core/query#SubTree)        |  Fetch sub tree of a content  |
 
-## Package core/handler
+## Operate contents core/handler
 See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#pkg-examples)
 
-**Manipuliate content**
+**Manipulate content**
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -73,7 +73,7 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/han
 | CanLogin        |  Check if a user can login or not |
 
 
-## Package core/permission
+## Permission core/permission
 See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#pkg-examples)
 
 | Function        | Description       
@@ -86,7 +86,7 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/per
 
 
 
-## Package core/db
+## Database core/db
 
 *See all db examples on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#pkg-examples)*
 
@@ -159,6 +159,6 @@ Below are low level data operations. Content manipulation normally is done via a
 
 
 
-## Package core/util
+## Utilities core/util
 
-## Package core/log
+## Log core/log
