@@ -32,10 +32,9 @@ Templates: [Template functions](references/template-functions), [Template filter
 
 Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
 
-Permission: [policies configuration](references/permission)
-
 Server side: [Go API](references/go)
 
+Configuration: [dm.yaml](references/dm.yaml), [policies configuration](references/permission)
 
 ### Roadmap
 
