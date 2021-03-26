@@ -96,7 +96,7 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#
 | [\<cond\>.Or](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Or)    | Same as Or with itself as first parameter |
 | [\<cond\>.Sortby](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Sortby)        |  Sort by |
 | [\<cond\>.Limit](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.Limit)        |  Limit |
-| [\<cond\>.AlwaysCount](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.AlwaysCount)   |  Always include count in result regarless limit |
+| [\<cond\>.WithCount](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Condition.AlwaysCount)   |  Always include count in result regarless limit |
 
 **Query**
 
