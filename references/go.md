@@ -126,7 +126,7 @@ There are 2 types of entities: content entities and normal entities. A content e
 
 Most of content related query can be done via apis in [core/query](#package-corequery).
 
-If you want to fetch normal table data, `BindEntity` is the way to go. You can create a struct or anonymous struct to bind into. There is also a `db.Datamap` and `DatamapList` which can be used for binding entities to a maplist or map. Check `BindEntity` link below to see examples.
+If you want to fetch normal table data, `BindEntity` is the way to go. You can create a struct or anonymous struct to bind into. There is also a `db.Datamap` and `DatamapList` which can be used for binding entities to a maplist or map. Check `BindEntity` link in below table to see examples.
 
 | Function        | Description       
 |:-------------|:---------------------|
