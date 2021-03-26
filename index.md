@@ -30,7 +30,7 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 Templates: [Template functions](references/template-functions), [Template filters](references/template-filters), [Override rule](references/template-override)
 
-Client/Rest API: [Rest api](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
+Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
 
 Permission: [policies configuration](references/permission)
 
