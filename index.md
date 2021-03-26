@@ -16,8 +16,7 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 ### Tutorials & articles
  - [Content model explained & how to configure](tutorial/content-model)
  - How to develop website
- - How to develop rest api
- - How to use client library(digimaker-ui)
+ - How to use client library(digimaker-ui) and rest api
  - How to develop content handler
  - How to extend fieldtype
  - How to use online log/debug tool
