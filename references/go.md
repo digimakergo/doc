@@ -83,7 +83,7 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/per
 
 ### Conditions
 
-A condition expression includes field, operator and value(eg. "id > ", 10). Operator can be ignored the opeator is = or 'in'. Typical values are 1(int), "hello"(string), or int/string slices(in will be used when querying), or datetime. So the value should be a baisc types or struct implementing  [database.sql.driver.Valuer](https://golang.org/pkg/database/sql/driver/#Valuer).
+A condition includes information of field, operator and value(eg. "id > ", 10). Operator can be ignored if it's '=' or 'in'. Typical values are like 1(int), "hello"(string), or int/string slices(in will be used when querying), or datetime. So the value should be a baisc types or struct implementing  [database.sql.driver.Valuer](https://golang.org/pkg/database/sql/driver/#Valuer).
 
 Supported operators: `">", ">=", "<", "==", "<=", "!=", "=", "in", "like"`. 
 
