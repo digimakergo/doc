@@ -139,6 +139,7 @@ If you want to fetch normal table data, `BindEntity` is the way to go. You can c
 
 ### Data operations
 Below are low level data operations. Content manipulation normally is done via apis in core/handler since they includes validation, permission check, relation cache update, versioning, etc.
+
 | Function        | Description       
 |:-------------|:---------------------|
 | [Insert](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#Insert)        |  Insert a record |
