@@ -81,7 +81,25 @@ See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/per
 See all on [Go doc](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#pkg-examples)
 
 
-**Condition**
+**Conditions**
+
+A condition expression includes field, operator and value(eg. "id > ", 10). Operator can be ignored the opeator is = or 'in'. Typical values are 1(int), "hello"(string), or int/string slices(in will be used when querying), or datetime. So the value should be a baisc types or struct implementing  [database.sql.driver.Valuer](https://golang.org/pkg/database/sql/driver/#Valuer).
+
+Supported operators: `">", ">=", "<", "==", "<=", "!=", "=", "in", "like"`. 
+
+*Note: "==" is for join between 2 targets.*
+
+```go
+//Below 2 are the same. Note: when using 'in/like' there should be a space before the operator
+db.Cond("id>", ids)
+db.Cond("id >", ids)
+
+//id equals 3
+db.Cond("id", 3)
+
+//id in 1, 3
+db.Cond("id", []int{1, 3})
+```
 
 [Here contains typical condition examples.](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#example-Cond)
 
