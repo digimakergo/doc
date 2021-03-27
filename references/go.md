@@ -84,16 +84,16 @@ package core/permission
 
 | Function        | Description       
 |:-------------|:---------------------|
-| HasAccessTo        |  Check if a user can accces to a operation |
-| CanRead        |  Check if a user can read a content |
-| CanUpdate        |  Check if a user can update a content |
-| CanDelete        |  Check if a user can delete a content |
+| [HasAccessTo](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#HasAccessTo)        |  Check if a user can accces to a operation |
+| [CanRead](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanRead)        |  Check if a user can read a content |
+| [CanUpdate](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanUpdate)        |  Check if a user can update a content |
+| [CanDelete]((https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanDelete))        |  Check if a user can delete a content |
 | **Fetch policies and access**        |   |
-| GetUserAccess        |  Get user limit list|
-| GetUserPolicies        |  Get user polices|
+| [GetUserAccess](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#GetUserAccess)        |  Get user limit list|
+| [GetUserPolicies](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#GetUserPolicies)        |  Get user polices|
 | **Operations**| |
-| AssignToUser        |  Get user polices|
-| RemoveAssignment        |  Remove the assignment|
+| [AssignToUser](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#AssignToUser)        |  Assign a role to a user|
+| [RemoveAssignment](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#RemoveAssignment)        |  Remove the assignment of user role|
 
 ## Database
 package core/db
