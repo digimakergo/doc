@@ -18,7 +18,7 @@ Below is a overview Go APIs, see [auto generated go documentation](https://pkg.g
 {:toc}
 </details>
 
-## Query content
+## Fetch contents
 package core/query
 
 Note: in all queries, the condition syntax as below is used
