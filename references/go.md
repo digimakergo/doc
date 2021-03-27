@@ -87,7 +87,7 @@ package core/permission
 | [HasAccessTo](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#HasAccessTo)        |  Check if a user can accces to a operation |
 | [CanRead](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanRead)        |  Check if a user can read a content |
 | [CanUpdate](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanUpdate)        |  Check if a user can update a content |
-| [CanDelete]((https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanDelete))        |  Check if a user can delete a content |
+| [CanDelete](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#CanDelete)        |  Check if a user can delete a content |
 | **Fetch policies and access**        |   |
 | [GetUserAccess](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#GetUserAccess)        |  Get user limit list|
 | [GetUserPolicies](https://pkg.go.dev/github.com/digimakergo/digimaker/core/permission#GetUserPolicies)        |  Get user polices|
