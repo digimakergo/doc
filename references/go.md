@@ -7,7 +7,7 @@ nav_order: 20
 has_toc: true
 ---
 
-Below is a overview Go API, the detail is in [Auto generated go documentation](https://pkg.go.dev/github.com/digimakergo/digimaker#section-documentation)
+Below is a overview Go APIs, see [auto generated go documentation](https://pkg.go.dev/github.com/digimakergo/digimaker#section-documentation)
 
 <details open markdown="block">
   <summary>
@@ -28,7 +28,7 @@ ids := []int{3, 4, 5, 7, 9, 10}
 condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("modified desc").Limit(0, 2)
 ```
 
-### Fetch one content
+### Fetch a content
 
 | Function        | Description       
 |:-------------|:---------------------|
