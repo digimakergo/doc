@@ -18,7 +18,8 @@ Below is a overview Go API, the detail is in [Auto generated go documentation](h
 {:toc}
 </details>
 
-## Query content core/query
+## Query content
+package core/query
 
 Note: in all queries, the condition syntax as below is used
 
@@ -59,7 +60,8 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 |:-------------|:---------------------|
 | UserRole  |  Fetch users, roles based on condition |
 
-## Operate contents core/handler
+## Operate contents
+package core/handler
 
 **Manipulate content**
 
@@ -77,7 +79,8 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | CanLogin        |  Check if a user can login or not |
 
 
-## Permission core/permission
+## Permission
+package core/permission
 
 | Function        | Description       
 |:-------------|:---------------------|
@@ -92,7 +95,8 @@ condition := db.Cond("id", ids).Cond("l.depth", 2).Cond("author", 1).Sortby("mod
 | AssignToUser        |  Get user polices|
 | RemoveAssignment        |  Remove the assignment|
 
-## Database core/db
+## Database
+package core/db
 
 
 ### Conditions
@@ -163,6 +167,8 @@ Below are low level data operations. Content manipulation normally is done via a
 
 
 
-## Utilities core/util
+## Utilities
+package core/util
 
-## Log core/log
+## Log & Debug
+package core/log
