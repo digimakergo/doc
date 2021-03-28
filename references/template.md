@@ -18,9 +18,11 @@ has_toc: true
 
 ## Template basis
 
-We are using [Pongo2](https://github.com/flosch/pongo2) as template engine, which uses Python Django like style. Check their documentation to see examples: [https://github.com/flosch/pongo2/tree/master/template_tests](https://github.com/flosch/pongo2/tree/master/template_tests)
+We are using [Pongo2](https://github.com/flosch/pongo2) as template engine, which uses Python Django like style. Check their documentation to see examples:
+ - Simple Example: [https://github.com/flosch/pongo2#first-impression-of-a-template](https://github.com/flosch/pongo2#first-impression-of-a-template)
+ - Examples as test cases: [https://github.com/flosch/pongo2/tree/master/template_tests](https://github.com/flosch/pongo2/tree/master/template_tests)
 
-
+### Filters
 Check here to see all their built in/add-on filters: [https://github.com/flosch/pongo2/blob/master/docs/filters.md](https://github.com/flosch/pongo2/blob/master/docs/filters.md)
 
 
