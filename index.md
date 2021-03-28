@@ -25,10 +25,10 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 
 ### [References](references/)
- - Templates: [Template functions](references/template-functions), [Template filters](references/template-filters), [Override rule](references/template-override)
+ - Templates: [Templating](references/template)
  - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
  - Server side: [Go API](references/go)
- - Configuration: [dm.yaml](references/dm.yaml), [policies configuration](references/permission)
+ - Configuration: [dm.yaml](references/dm.yaml), [template_override.yaml](references/template-override), [policies.yaml](references/permission),
 
 ### Roadmap
 
