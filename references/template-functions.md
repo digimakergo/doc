@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Template functions
+title: Template
 parent: References
-permalink: /references/template-functions
+permalink: /references/template
 nav_order: 9
 has_toc: true
 ---
@@ -16,10 +16,19 @@ has_toc: true
 {:toc}
 </details>
 
+## Template basis
 
-## Content fetch
+We are using [Pongo2](https://github.com/flosch/pongo2) as template engine, which uses Python Django like style. Check their documentation to see examples: https://github.com/flosch/pongo2/tree/master/template_tests
 
-### dm.fetch_byid
+
+Check here to see all their built in/add-on filters: https://github.com/flosch/pongo2/blob/master/docs/filters.md
+
+
+## Functions in digimaker
+
+### Contents
+
+#### dm.fetch_byid
 Parameter(int): id of the locaiton. 
 
 Result(ContentTyper): content which has the location id
@@ -28,7 +37,7 @@ Result(ContentTyper): content which has the location id
 ```
 
 
-### dm.parent
+#### dm.parent
 Parameter(ContentTyper)
 
 Result(ContentTyper)
@@ -38,7 +47,7 @@ Description: return the parent of the content
 {% raw %}{%set parent = dm.parent( content ) %}{% endraw %}
 ```
 
-### dm.children
+#### dm.children
 Parameter: 
 
 content ContentTyper
@@ -52,10 +61,9 @@ sortBy string
 Return: list of content or empty slice of ContentTyper if it has nothing
 
 
-## MISC
+### MISC
 
-
-### dm.nice_url
+#### dm.nice_url
 Parameter: content ContentTyper
 
 Return: string
@@ -67,7 +75,7 @@ Description: get nice url of a content, including site path/'prefix'
 ```
 
 
-### dm.root
+#### dm.root
 Parameter: string url
 
 Return: string
@@ -79,6 +87,6 @@ Description: add site path as prefix to the url. If it's '/' the last / will be 
 ```
 
 
-
+## Filters in digimaker
 
 
