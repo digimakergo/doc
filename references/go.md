@@ -70,7 +70,7 @@ package core/handler
 | [Create](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Create)        |  Create content |
 | [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Update)        |  Update a content |
 | [Move](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Move)        |  Update a content |
-| [DeleteByID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByID)        |  Delete a content by locatoin id |
+| [DeleteByID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByID)        |  Delete a content by location id |
 | [DeleteByCID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByCID)        |  Delete a content by content id |
 | [DeleteByContent](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByContent)        |  Delete a content |
 
