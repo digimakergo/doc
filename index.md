@@ -32,4 +32,8 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 ### Roadmap
 
-We are evolving so check our [roadmap](/roadmap) to know our next step.
+We are evolving so check our [roadmap](roadmap) to know our next step.
+
+### Thanks
+Special thanks to template library [Pongo2](https://github.com/flosch/pongo2) and high perforance DB library [SQL Boiler](https://github.com/volatiletech/sqlboiler). 
+
