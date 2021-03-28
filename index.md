@@ -13,7 +13,7 @@ Welcome to Digimaker CMF documentation!
 The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project readme has explained code structure and basic apis.
 
 
-### Tutorials & articles
+### Tutorials & articles (tbd)
  - [How to develop website](tutorial/)
  - [How to use client library(digimaker-ui) and rest api to develop web app](tutorial/)
  - [How to develop own rest api](tutorial/)
