@@ -67,16 +67,16 @@ package core/handler
 
 | Function        | Description       
 |:-------------|:---------------------|
-| Create        |  Create content |
-| Update        |  Update a content |
-| DeleteByID        |  Delete a content |
+| [Create](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Create)        |  Create content |
+| [Update](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.Update)        |  Update a content |
+| [DeleteByID](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#ContentHandler.DeleteByID)        |  Delete a content |
 
 
 **User**
 
 | Function        | Description       
 |:-------------|:---------------------|
-| CanLogin        |  Check if a user can login or not |
+| [CanLogin](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#CanLogin)        |  Check if a user can login or not |
 
 
 ## Permission
