@@ -14,15 +14,8 @@ Current version:
 
 ### Wishlist
 - Graphic QL support(hope in 0.2 or 0.1.1)
-
-### Version 0.2
-
-### Version 0.1.1
-Server
 - Support join for non-location content, which is helpful also for eui's custom column & potencially graphic QL.
-
-EUI/digimaker-ui
 - Support multi-image upload
-
-General
 - Implement administrative console for debug purpose.
+- Support attribute level permission configuration
+- Support variables in permision configuration
