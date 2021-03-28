@@ -13,14 +13,12 @@ Welcome to Digimaker CMF documentation!
 The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project readme has explained code structure and basic apis.
 
 
-### Tutorials & articles (tbd)
+### Tutorials & articles (tba)
  - [How to develop website](tutorial/)
  - [How to use client library(digimaker-ui) and rest api to develop web app](tutorial/)
- - [How to develop own rest api](tutorial/)
- - [How to develop content handler](tutorial/)
- - [How to extend fieldtype](tutorial/)
- - [Online log/debug tool](tutorial/)
+ - [How to develop server side(extend rest api, content handler, fieldtype)](tutorial/)
  - [Content model explained & how to configure](tutorial/content-model)
+ - [Online log/debug tool](tutorial/)
  - [Authorization explained](tutorial/)
 
 
