@@ -77,7 +77,7 @@ package core/handler
 | Function        | Description       
 |:-------------|:---------------------|
 | [CanLogin](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#CanLogin)        |  Check if a user can login or not |
-
+| [Enable](https://pkg.go.dev/github.com/digimakergo/digimaker/core/handler#Enable)        |  Enable/Disable a user |
 
 ## Permission
 package core/permission
