@@ -9,15 +9,13 @@ has_toc: true
 
 <details open markdown="block">
   <summary>
-    Table of contents
+    Template functions
   </summary>
   {: .text-delta }
 1. TOC
 {:toc}
 </details>
 
-Template functions
---------------
 
 ## Content fetch
 
