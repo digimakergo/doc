@@ -26,7 +26,7 @@ The simpliest way to install is to get sample code and run: [https://github.com/
  - Templates: [Templating](references/template)
  - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
  - Server side: [Go API](references/go)
- - Configuration: [dm.yaml](references/dm.yaml), [contenttype.json](references/contenttype.json) [template_override.yaml](references/template-override), [policies.yaml](references/permission)
+ - Configuration: [dm.yaml](references/dm.yaml), [contenttype.json](references/contenttype.json), [template_override.yaml](references/template-override), [policies.yaml](references/permission)
 
 ### Roadmap
 
