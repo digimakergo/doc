@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Permission
+title: Policies.yaml
 parent: References
-permalink: /references/permission
+permalink: /references/policies
 nav_order: 40
 ---
