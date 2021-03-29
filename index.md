@@ -28,9 +28,12 @@ The simpliest way to install is to get sample code and run: [https://github.com/
  - Server side: [Go API](references/go)
  - Configuration: [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
 
-### Backend administration(eui)
+### Backend administration(editorial user interface/eui)
+Below is a basic screenshot of eui, which is customizable in tools, display, columns, themes etc, and is extendable for more features.
 
 <img src="https://raw.githubusercontent.com/digimakergo/eui/master/doc/eui-1.png" width="700px" />
+
+[Customize eui](eui/)
 
 ### Roadmap
 
