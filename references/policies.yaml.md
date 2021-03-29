@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Policies.yaml
+title: policies.yaml
 parent: References
 permalink: /references/policies
 nav_order: 40
