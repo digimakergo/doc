@@ -14,7 +14,7 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 
 ### Concept
- - [Content model explained & how to configure](tutorial/content-model)
+ - [Basic concepts](tutorial/basic-concepts)
 
 ### Tutorials & articles (tba)
  - [How to develop website](tutorial/)
