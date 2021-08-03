@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Content model explained
+title: Basic concepts
 parent: Tutorial
 permalink: /tutorial/content-model
 nav_order: 1
@@ -15,7 +15,7 @@ nav_order: 1
 {:toc}
 </details>
 
-## Content model concept
+## Basic concepts
 
 ### Location content and non-location content
 Digimaker has 2 types of content: 
@@ -46,7 +46,7 @@ However, for many customized features it will be more flexiable to have own api/
 
 
 
-### Basic architecture
+### How is data manipulated
 It's very similar to a typical mvc system.
 
 - Model - based on content definition(under configs/contenttype.json), we generate a model layer(under entity)
