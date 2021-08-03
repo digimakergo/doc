@@ -13,7 +13,7 @@ Welcome to Digimaker CMF documentation!
 The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project readme has explained code structure and basic apis.
 
 
-## Concept
+### Concept
  - [Content model explained & how to configure](tutorial/content-model)
 
 ### Tutorials & articles (tba)
