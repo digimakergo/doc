@@ -13,6 +13,7 @@ Content model concept
 Digimaker has 2 types of content: 
 
 1) content which has a location, eg. article, news, blog. Those contents may need location to identify where they are, a unique id(locaiton id), and may have multiple locations for one content(eg.article).
+
 2) content which doesn't have a location, eg. image, video, customzied content like certification. They don't need location to identify themself, and they are very close to a normal database table.
 
 
