@@ -2,7 +2,7 @@
 layout: page
 title: Basic concepts
 parent: Tutorial
-permalink: /tutorial/content-model
+permalink: /tutorial/basic-concepts
 nav_order: 1
 ---
 
