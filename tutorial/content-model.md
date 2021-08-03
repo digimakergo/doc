@@ -6,9 +6,17 @@ permalink: /tutorial/content-model
 nav_order: 1
 ---
 
+<details open markdown="block">
+  <summary>
+    Template
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
-Content model concept
-============
+## Content model concept
+
 
 Digimaker has 2 types of content: 
 
