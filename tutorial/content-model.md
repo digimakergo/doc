@@ -32,7 +32,18 @@ So digimaker provides apis and features(in admin) to manage both types of conten
 
 Well in principle they are almost doing the same thing. You can use our api to manipulate those data, or use own api with own ORM, or both ways(mix our api with own ORM). 
 
-The benefit of CMF is that it provided some features already so you don't need to do duplicated work on almost same feature on different entities, also the content model is dynamic so you can set value to a field dynamically. However, for many customized features it will be more flexiable to have own api/ORM since ORM way is more powerful, eg. when there are lots of join in query, multiple tables update in business logic.
+Some benefit of using CMF's content model instead of pure entity:
+
+- it provides some features already so you don't need to do duplicated work on almost same feature on different entities 
+- the content model is dynamic so you can set value to a field dynamically. For instance, in example below, if you add more attributes(eg. category or place) to image it will be automatically in the edit interface and rest api without any coding. 
+
+<img src="../assets/images/content_image.png" width="600px"/>
+
+<img src="../assets/images/content_image_edit.png"  width="600px"/>
+
+
+However, for many customized features it will be more flexiable to have own api/ORM since ORM way is more powerful, eg. when there are lots of join in query, multiple tables update in business logic.
+
 
 
 ### Basic architecture
