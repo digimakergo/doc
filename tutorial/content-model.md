@@ -17,7 +17,7 @@ nav_order: 1
 
 ## Content model concept
 
-### Content with location and content without location
+### Location content and non-location content
 Digimaker has 2 types of content: 
 
 1) content which has a location, eg. article, news, blog. Those contents may need location to identify where they are, a unique id(locaiton id), and may have multiple locations for one content(eg.article).
@@ -28,7 +28,7 @@ Digimaker has 2 types of content:
 So digimaker provides apis and features(in admin) to manage both types of content, eg. query, add, update, delete, set permissions.
 
 
-### What's the difference between using content type 2) above and normal database entities(ORM)? 
+### What's the difference between using non-location content and normal database table/entity&ORM? 
 
 Well in principle they are almost doing the same thing. You can use our api to manipulate those data, or use own api with own ORM, or both ways(mix our api with own ORM). 
 
@@ -47,7 +47,7 @@ However, for many customized features it will be more flexiable to have own api/
 
 
 ### Basic architecture
-It's very similar to typical mvc system.
+It's very similar to a typical mvc system.
 
 - Model - based on content definition(under configs/contenttype.json), we generate a model layer(under entity)
 - Business logic - we have business logic related to content and provide Go api
