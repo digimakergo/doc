@@ -16,12 +16,12 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 ### Concept
  - [Basic concepts](tutorial/basic-concepts)
 
-### Tutorials & articles (tba)
+### Tutorials & articles
  - [Consume rest api](tutorial/rest)
- - [Templating](tutorial/template)
- - [Use client library(digimaker-ui)](tutorial/digimaker-ui)
- - [Extend server side](tutorial/server)
- - [Online log/debug tool](tutorial/debug)
+ - [Templating](tutorial/template) (tba)
+ - [Use client library(digimaker-ui)](tutorial/digimaker-ui)(tba)
+ - [Extend server side](tutorial/server)(tba)
+ - [Online log/debug tool](tutorial/debug)(tba)
 
 
 ### [References](references/)
