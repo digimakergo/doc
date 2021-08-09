@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Permission configuration
+title: Permission settings
 parent: Tutorial
 permalink: /tutorial/permission
 nav_order: 5
