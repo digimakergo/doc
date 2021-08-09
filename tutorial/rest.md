@@ -48,7 +48,8 @@ Authorization: Bearer ...
 ```
 
 ### Response
-```{
+```json
+  {
   "cid": 3,
   "version": 0,
   "published": 1560534450,
@@ -56,6 +57,7 @@ Authorization: Bearer ...
   "cuid": "bk1trcli6ekibbmo2cj0",
   "status": 1,
   ...
+  }
 ```
 
 
