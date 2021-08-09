@@ -7,9 +7,9 @@ nav_order: 5
 ---
 
 
-(tba)
+## Permission settings
 
-The permission policies is defined under [policies.json](configs/policies.json), and then connect to role and user in the content. policies.json defines permission like
+The permission policies are defined under [policies.json](configs/policies.json), and then connect to role and user in the content. policies.json defines permission like
  - fetching  based on content type, parent,etc
  - operations(eg. create content, update, delete) based on content type, parent, author(self)
  - updated fields when updating - attribute level permission
@@ -34,3 +34,5 @@ Example on policies.json:
 ```
 
 Check docs to see policies configuration: [https://digimaker.org/doc/references/policies](https://digimaker.org/doc/references/policies)
+
+(TBA)
