@@ -16,7 +16,7 @@ nav_order: 2
 {:toc}
 </details>
 
-Consuming rest api needs authorization first to get access token, then in every rest api, the access token will be attched to the request header.
+Consuming rest api needs authorization first to get access token, then in every rest api, the access token will be attched to the request header. Please see [/references/rest](/references/rest) for full rest apis.
 
 ## Authorization
 For consuming rest api, you need to have a authorization token first:``/api/auth/auth?username=<username>&password=<password>``
