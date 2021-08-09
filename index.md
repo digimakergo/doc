@@ -17,11 +17,11 @@ The simpliest way to install is to get sample code and run: [https://github.com/
  - [Basic concepts](tutorial/basic-concepts)
 
 ### Tutorials & articles (tba)
- - [How to develop website](tutorial/)
- - [How to use client library(digimaker-ui) and rest api to develop web app](tutorial/)
- - [How to develop server side(extend rest api, content handler, fieldtype)](tutorial/)
- - [Online log/debug tool](tutorial/)
- - [Authorization explained](tutorial/)
+ - [Consume rest api](tutorial/rest)
+ - [Templating](tutorial/template)
+ - [Use client library(digimaker-ui)](tutorial/digimaker-ui)
+ - [Extend server side](tutorial/server)
+ - [Online log/debug tool](tutorial/debug)
 
 
 ### [References](references/)
