@@ -19,6 +19,7 @@ The simpliest way to install is to get sample code and run: [https://github.com/
  - [Templating](tutorial/template) (tba)
  - [Use client library(digimaker-ui)](tutorial/digimaker-ui)(tba)
  - [Extend server side](tutorial/server)(tba)
+ - [Permission settings](tutorial/permission)
  - [Online log/debug tool](tutorial/debug)(tba)
 
 
