@@ -6,6 +6,17 @@ permalink: /tutorial/rest
 nav_order: 2
 ---
 
+
+<details open markdown="block">
+  <summary>
+    Template
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+
 Consuming rest api
 -------------
 
