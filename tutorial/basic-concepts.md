@@ -35,7 +35,7 @@ Digimaker has 2 types of content:
 So digimaker provides apis and features(in admin) to manage both types of content, eg. query, add, update, delete, set permissions.
 
 
-### Difference between using non-location content and normal database table/entity&ORM
+### Difference between using non-location content and normal ORM entity
 
 Well in principle they are almost doing the same thing. You can use our api to manipulate those data, or use own api with own ORM, or both ways(mix our api with own ORM). 
 
