@@ -78,7 +78,7 @@ article/full.html
 ```
 
 
-Digimaker by default provides nice-url, so if you use ``<a href="{{dm.niceurl(content)}}">News</a>``, it will automically load the news content page.
+Digimaker by default provides nice-url, so if you use ``<a href="{% raw %}{{dm.niceurl(content)}}{% endraw %}">News</a>``, it will automically load the news content page.
 
 For full template language, please vist [Pongo2's page](https://github.com/flosch/pongo2)
 
