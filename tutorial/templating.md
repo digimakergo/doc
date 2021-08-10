@@ -44,7 +44,7 @@ template_folder: folder under template folder(by default it's under ``web/templa
 
 Base template defines the layout, which is in base.html (eg. web/template/demo/base.html). 
 
-Digimaker uses ``block`` in templating, meaning base.html defines ``block`` and real template fills in value. In example below, base.html defines ``content`` block and is filled in ``article/full.html``
+Digimaker uses block in templating, meaning base.html defines block and real template fills in value. In example below, base.html defines ``content`` block and is filled in ``article/full.html``
 
 base.html
 ```html
