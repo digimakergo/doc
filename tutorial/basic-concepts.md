@@ -22,22 +22,22 @@ This page explains some ideas behind Digimaker CMF, eg. content model, architect
 ### Location content and non-location content
 Digimaker has 2 types of content: 
 
-1) content which has a location, eg. article, news, blog. Those contents may need location to identify where they are, a unique id(locaiton id), setting visibility&priority, permission based on location, and may have multiple locations for one content(eg.article).
+- content which has a location, eg. article, news, blog. Those contents may need location to identify where they are, a unique id(locaiton id), setting visibility&priority, permission based on location, and may have multiple locations for one content(eg.article).
 
-2) content which doesn't have a location, eg. image, video, customzied content like certificates. They don't need location to identify themself, and they are very close to a normal database table.
+- content which doesn't have a location, eg. image, video, customzied content like certificates. They don't need location to identify themself, and they are very close to a normal database table.
 
 
 So digimaker provides apis and features(in admin) to manage both types of content, eg. query, add, update, delete, set permissions.
 
 
-### What's the difference between using non-location content and normal database table/entity&ORM? 
+### Difference between using non-location content and normal database table/entity&ORM
 
 Well in principle they are almost doing the same thing. You can use our api to manipulate those data, or use own api with own ORM, or both ways(mix our api with own ORM). 
 
 Some benefit of using CMF's content model instead of pure entity:
 
-- it provides some features already so you don't need to do duplicated work on almost same feature on different entities 
-- the content model is dynamic so you can set value to a field dynamically. For instance, in example below, if you add more attributes(eg. category or place) to image it will be automatically in the edit interface and rest api without any coding. 
+ 1. It provides some features already so you don't need to do duplicated work on almost same feature on different entities 
+ 2. The content model is dynamic so you can set value to a field dynamically. For instance, in example below, if you add more attributes(eg. category or place) to image it will be automatically in the edit interface and rest api without any coding. 
 
 <img src="../assets/images/content_image.png" width="600px"/>
 
