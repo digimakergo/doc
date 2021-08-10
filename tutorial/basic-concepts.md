@@ -17,6 +17,8 @@ nav_order: 1
 
 ## Basic concepts
 
+This page explains some ideas behind Digimaker CMF, eg. content model, archiecture to help understanding it.
+
 ### Location content and non-location content
 Digimaker has 2 types of content: 
 
