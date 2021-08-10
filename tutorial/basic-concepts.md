@@ -19,6 +19,11 @@ nav_order: 1
 
 This page explains some ideas behind Digimaker CMF, eg. content model, architecture to help understanding it.
 
+### Content model
+A content model is like other model, which consists of fields, and each field belongs to field type(or data type). For instance, an article content has title, summary, body, etc, where title is 'text' fieldtype, summary and body are 'richtext' field type.
+
+In Digimaker, if a new field is added, it will be automically shown in the administration console.
+
 ### Location content and non-location content
 Digimaker has 2 types of content: 
 
