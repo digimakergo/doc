@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Consume Rest api
+title: Consume rest api
 parent: Tutorial
 permalink: /tutorial/rest
 nav_order: 2
@@ -9,7 +9,7 @@ nav_order: 2
 
 <details open markdown="block">
   <summary>
-    Template
+    Contents
   </summary>
   {: .text-delta }
 1. TOC
