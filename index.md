@@ -34,7 +34,6 @@ Below is a basic screenshot of eui, which is customizable in tools, display, col
 
 <img src="https://raw.githubusercontent.com/digimakergo/eui/master/doc/eui-1.png" width="700px" />
 
-[Customize eui](eui/)
 
 ### Roadmap
 
