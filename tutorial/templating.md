@@ -90,7 +90,7 @@ For full template language, please vist [Pongo2's page](https://github.com/flosc
 
 ## Templating content page
 When visiting a content page, Digimaker will try to find template of the content. Below is an template override example(under ``configs/template_override.yaml``) of visiting a folder, 
-so for any folder content type, it will use "folder/full.html":
+so for any folder content type, it will use ``folder/full.html``:
 
 ```yaml
 - contenttype: folder
