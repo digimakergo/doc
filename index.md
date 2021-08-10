@@ -38,7 +38,7 @@ Below is a basic screenshot of eui, which is customizable in tools, display, col
 
 ### Roadmap
 
-We are evolving so check our [roadmap](roadmap) to know our next step.
+We are evolving so check our [New feature ideas in github project](https://github.com/digimakergo/digimaker/projects) to know our next step.
 
 ### Thanks
 Special thanks to template library [Pongo2](https://github.com/flosch/pongo2) and high perforance DB library [SQL Boiler](https://github.com/volatiletech/sqlboiler). 
