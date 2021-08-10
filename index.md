@@ -23,13 +23,13 @@ The simpliest way to install is to get sample code and run: [https://github.com/
  - [Online log/debug tool](tutorial/debug)(tba)
 
 
-### [References](references/)
+### References
  - Templates: [Templating](references/template)
  - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
  - Server side: [Go API](references/go)
  - Configuration: [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
 
-### Backend administration(editorial user interface/eui)
+### Content Administration(editorial ui)
 Below is a basic screenshot of eui, which is customizable in tools, display, columns, themes etc, and is extendable for more features.
 
 <img src="https://raw.githubusercontent.com/digimakergo/eui/master/doc/eui-1.png" width="700px" />
