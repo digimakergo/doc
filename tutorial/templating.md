@@ -97,7 +97,7 @@ There are many possiblities in setting the override rule, eg. by content type, i
 Note: if there are several rules matching one content, the topest will be used. There is debug tool which can debug which template is used and the matching process.
   
  
-   
+For template function refrences, visit [functions/filters](../references/template)   
 
 
 
