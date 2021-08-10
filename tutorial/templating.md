@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Consume Rest api
+title: Templating
 parent: Tutorial
 permalink: /tutorial/templating
-nav_order: 2
+nav_order: 3
 ---
 
 
