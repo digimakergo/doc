@@ -16,7 +16,7 @@ nav_order: 3
 {:toc}
 </details>
 
-Templating is a typical way to writ website pages. Digiamker provides ways to implement multi sites, a powerful template override configuration, and template functions.
+Templating is a typical way to write website pages. Digimaker website kits can implement multi sites, provide a powerful template override configuration, and template functions.
 
 ## Site setting
 
