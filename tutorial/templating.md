@@ -49,7 +49,7 @@ Digimaker uses block in templating, meaning base.html defines block and real tem
 base.html
 ```html
         <div class="main">
-            {% block content%}Default body{% endblock %}
+            {\%block content%}Default body{% endblock %}
         </div>
 ```
 
@@ -57,7 +57,7 @@ article/full.html
 ```html
 {% extends "../base.html" %}
 
-{% block content%}
+{\% block content%}
 <div class="{{content.ContentType}} full">
 
     <h2>{{content.Name}}</h2>
