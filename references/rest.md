@@ -77,12 +77,13 @@ Response:
 ## Content fetch
 
 ### content/get
+Get content based on id
 
-Description: get content based on id
+**Format**
+`content/get/<content type>/<id>`
 
-Format: `content/get/<content type>/<id>`
-
-Result: JSON of the content
+**Result**
+JSON of the content
 
 
 Example: `content/get/article/1`
@@ -94,13 +95,13 @@ Example: `content/get/article/1`
 
 ### content/list
 
-#### Format
-`content/list/<content type>?<parameters...>`
-
-#### Description
 Get content list
+
+**Format**
+
+`content/list/<content type>?<parameters...>`
   
-#### Parameters
+**Parameters**
   
   | Parameter        |   Example | Description  |
 | ------------- |-------------| -----|
@@ -113,7 +114,8 @@ Get content list
 |  localtion.*       | location.priority | filter by location's attribute. eg. priority, publish. modified  |
   
 
-#### Result 
+**Result**
+
   List of the content like below
 ```json
 {
@@ -131,7 +133,8 @@ Get content list
 
 Create a content
   
-#### Format
+**Format**
+
 url: `content/create/<parent location id>/<content type>`, with a json as request body.  
 
 Here is a body example, where title&body are field identifiers
@@ -141,11 +144,9 @@ Here is a body example, where title&body are field identifiers
   "body":"Test body"
  }
   ```
-#### Return
+**Return**
 
-  
-#### Description
-Create a content. 
+
  
   
 
@@ -154,7 +155,7 @@ Create a content.
 ### content/update
 Update a content
   
-#### Format
+**Format**
 url: `content/update/<location id>` or `content/update/<content type>/<content id>`. Put json as request body.  
   
 Here is a body example, where title&body are field identifiers
@@ -163,7 +164,7 @@ Here is a body example, where title&body are field identifiers
   "body":"Test body"}
  ```
 
-### content/delete
+**content/delete**
 Delete a content
 
 Format:
