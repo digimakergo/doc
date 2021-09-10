@@ -95,7 +95,7 @@ Example: content/get/article/1
 ### content/list
 
 #### Format
-content/list/\<content type\>?\<parameters...\>
+`content/list/<content type>?<parameters...>`
 
 #### Description
 Get content list
@@ -132,7 +132,7 @@ Get content list
 Create a content
   
 #### Format
-url: content/create/\<parent>\/\<content type\>, with a json as request body.  
+url: `content/create/<parent location id>/<content type>`, with a json as request body.  
 
 Here is a body example, where title&body are field identifiers
   ```json
@@ -155,7 +155,7 @@ Create a content.
 Update a content
   
 #### Format
-url: content/update/\<location id\> or content/update/\<content type\>/\<content id\>. Put json as request body.  
+url: `content/update/<location id>` or `content/update/<content type>/<content id>`. Put json as request body.  
   
 Here is a body example, where title&body are field identifiers
   ```json
@@ -167,7 +167,7 @@ Here is a body example, where title&body are field identifiers
 Delete a content
 
 Format:
-url: content/delete?id=\<location id\> or content/delete?type=\<content type\>&id=\<content id\>.
+url: `content/delete?id=<location id>` or `content/delete?type=<content type>&id=<content id>`.
   
 ### content/setpriority
 
