@@ -74,9 +74,8 @@ Response:
 }
 ```
 
-## Content fetch
 
-### content/get
+## [fetch]content/get
 Get content based on id
 
 **Format**
@@ -89,11 +88,11 @@ JSON of the content
 Example: `content/get/article/1`
 
 
-### content/version
+## [fetch]content/version
 
-### content/treemenu
+## [fetch]content/treemenu
 
-### content/list
+## [fetch]content/list
 
 Get content list
 
@@ -127,9 +126,7 @@ Get content list
 }  
 ```
 
-## Content operation
-
-### content/create
+## [operation]content/create
 
 Create a content
   
@@ -150,9 +147,9 @@ Here is a body example, where title&body are field identifiers
  
   
 
-### content/move
+## [operation]content/move
 
-### content/update
+## [operation]content/update
 Update a content
   
 **Format**
@@ -170,32 +167,28 @@ Delete a content
 Format:
 url: `content/delete?id=<location id>` or `content/delete?type=<content type>&id=<content id>`.
   
-### content/setpriority
+## [operation]content/setpriority
 
-## Authorization
-### auth/auth
+## [Auth]auth/auth
 
-### auth/token/revoke
+## [Auth]auth/token/revoke
 
-### auth/token/renew-refreshtoken
+## [Auth]auth/token/renew-refreshtoken
 
-### auth/token/renew-accesstoken
+## [Auth]auth/token/renew-accesstoken
 
 
-## User
-### user/current
+## [user]user/current
 
-### user/resetpassword
+## [user]user/resetpassword
 
-### user/resetpassword-confirm
+## [user]user/resetpassword-confirm
 
-### user/enable
+## [user]user/enable
 
-## Content model
-### contenttype/get
+## [content type]contenttype/get
 
-## Utility
-### util/uploadfile
+## [utility]util/uploadfile
 
-### util/uploadimage
+## [utility]util/uploadimage
 
