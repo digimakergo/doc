@@ -160,7 +160,7 @@ url: content/update/\<location id\> or content/update/\<content type\>/\<content
 Here is a body example, where title&body are field identifiers
   ```json
 {"title":"Test",
-  body:"Test body"}
+  "body":"Test body"}
  ```
 
 ### content/delete
