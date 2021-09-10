@@ -78,11 +78,43 @@ Response:
 
 ### content/get
 
+Description: get content based on id
+
+Format: content/get/{content type}/{id}
+
+Result: JSON of the content
+
+
+Example: content/get/article/1
+
+
 ### content/version
 
 ### content/treemenu
 
 ### content/list
+
+Format: content/list/<content type>?<parameters...>
+  
+Parameters
+  | Parameter        |   example      | Description  |
+| ------------- |:-------------:| -----:|
+|  parent    | 3 | parent id of a content. No need if it's non-location content |
+|  level    | 1 | Level under the parent id, 1 means the direct children . No need if it's non-location content |
+|  limit    | 10 | How many for record to fetch |
+|  offset    | 0 | Which position to fetch records |
+|  sortby    | priority desc,id desc | sort by. Support multi fields |
+|  field.*    | field.title | filter by field |  
+|  localtion.*       | location.priority | filter by location's attribute. eg. priority, publish. modified  |
+  
+
+Description: get content list
+
+Result: list of the content like below
+{
+  "list": [],   "count": 4 }
+}  
+ 
 
 ## Content operation
 
