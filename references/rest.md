@@ -94,11 +94,16 @@ Example: content/get/article/1
 
 ### content/list
 
-Format: content/list/<content type>?<parameters...>
+#### Format
+content/list/<content type>?<parameters...>
+
+#### Description
+Get content list
   
-Parameters
-  | Parameter        |   example | Description  |
-| ------------- |:-------------:| -----|
+#### Parameters
+  
+  | Parameter        |   Example | Description  |
+| ------------- |-------------| -----|
 |  parent    | 3 | parent id of a content. No need if it's non-location content |
 |  level    | 1 | Level under the parent id, 1 means the direct children . No need if it's non-location content |
 |  limit    | 10 | How many for record to fetch |
@@ -108,24 +113,54 @@ Parameters
 |  localtion.*       | location.priority | filter by location's attribute. eg. priority, publish. modified  |
   
 
-Description: get content list
-
-Result: list of the content like below
+#### Result 
+  List of the content like below
+```
 {
-  "list": [],   "count": 4 }
+  "list": [{"title":"Test", "body":"<p>Test body</p>"}],   "count": 4 }
 }  
- 
+```
 
 ## Content operation
 
 ### content/create
 
+Create a content
+  
+#### Format
+url: content/create/<parent>/<content type>, with a json as request body.  
+
+Here is a body example, where title&body are field identifiers
+  ```
+{"title":"Test", body:"Test body"}
+  ```
+#### Return
+
+  
+#### Description
+Create a content. 
+ 
+  
+
 ### content/move
 
 ### content/update
+Update a content
+  
+#### Format
+url: content/update/<location id> or content/update/<content type>/<content id>. Put json as request body.  
+  
+Here is a body example, where title&body are field identifiers
+  ```
+{"title":"Test", body:"Test body"}
+ 
 
 ### content/delete
+Delete a content
 
+Format:
+url: content/delete?id=<location id> or content/delete?type=<content type>&id=<content id>.
+  
 ### content/setpriority
 
 ## Authorization
