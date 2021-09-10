@@ -121,7 +121,7 @@ Get content list
      [{"title":"Test", 
        "body":"<p>Test body</p>"}
      ],   
-   "count": 4 }
+   "count": 4
 }  
 ```
 
