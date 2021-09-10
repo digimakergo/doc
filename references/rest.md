@@ -97,8 +97,8 @@ Example: content/get/article/1
 Format: content/list/<content type>?<parameters...>
   
 Parameters
-  | Parameter        |   example      | Description  |
-| ------------- |:-------------:| -----:|
+  | Parameter        |   example | Description  |
+| ------------- |:-------------:| -----|
 |  parent    | 3 | parent id of a content. No need if it's non-location content |
 |  level    | 1 | Level under the parent id, 1 means the direct children . No need if it's non-location content |
 |  limit    | 10 | How many for record to fetch |
