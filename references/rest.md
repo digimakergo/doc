@@ -80,12 +80,12 @@ Response:
 
 Description: get content based on id
 
-Format: content/get/{content type}/{id}
+Format: `content/get/<content type>/<id>`
 
 Result: JSON of the content
 
 
-Example: content/get/article/1
+Example: `content/get/article/1`
 
 
 ### content/version
