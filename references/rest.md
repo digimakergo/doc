@@ -95,7 +95,7 @@ Example: content/get/article/1
 ### content/list
 
 #### Format
-content/list/<content type>?<parameters...>
+content/list/\<content type\>?\<parameters...\>
 
 #### Description
 Get content list
@@ -115,9 +115,13 @@ Get content list
 
 #### Result 
   List of the content like below
-```
+```json
 {
-  "list": [{"title":"Test", "body":"<p>Test body</p>"}],   "count": 4 }
+  "list": 
+     [{"title":"Test", 
+       "body":"<p>Test body</p>"}
+     ],   
+   "count": 4 }
 }  
 ```
 
@@ -128,11 +132,14 @@ Get content list
 Create a content
   
 #### Format
-url: content/create/<parent>/<content type>, with a json as request body.  
+url: content/create/\<parent>\/\<content type\>, with a json as request body.  
 
 Here is a body example, where title&body are field identifiers
-  ```
-{"title":"Test", body:"Test body"}
+  ```json
+{
+  "title":"Test", 
+  "body":"Test body"
+ }
   ```
 #### Return
 
@@ -148,18 +155,19 @@ Create a content.
 Update a content
   
 #### Format
-url: content/update/<location id> or content/update/<content type>/<content id>. Put json as request body.  
+url: content/update/\<location id\> or content/update/\<content type\>/\<content id\>. Put json as request body.  
   
 Here is a body example, where title&body are field identifiers
-  ```
-{"title":"Test", body:"Test body"}
- 
+  ```json
+{"title":"Test",
+  body:"Test body"}
+ ```
 
 ### content/delete
 Delete a content
 
 Format:
-url: content/delete?id=<location id> or content/delete?type=<content type>&id=<content id>.
+url: content/delete?id=\<location id\> or content/delete?type=\<content type\>&id=\<content id\>.
   
 ### content/setpriority
 
