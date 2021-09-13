@@ -46,8 +46,7 @@ For error it will put error information into data and set "error" to true
 ```
 
 
-## [fetch]content/get
-Get content based on id
+## Fetch a content
 
 **Format**
 `content/get/<content type>/<id>`
@@ -59,13 +58,13 @@ JSON of the content
 Example: `content/get/article/1`
 
 
-## [fetch]content/version
+## Fetch a version
+content/version
 
-## [fetch]content/treemenu
+## Fetch a tree
+content/treemenu
 
-## [fetch]content/list
-
-Get content list
+## Fetch content list
 
 **Format**
 
@@ -97,10 +96,7 @@ Get content list
 }  
 ```
 
-## [operation]content/create
-
-Create a content
-  
+## Create a content  
 **Format**
 
 url: `content/create/<parent location id>/<content type>`, with a json as request body.  
@@ -118,10 +114,10 @@ Here is a body example, where title&body are field identifiers
  
   
 
-## [operation]content/move
+## Move a content
+**Format:** content/move
 
-## [operation]content/update
-Update a content
+## Update a content
   
 **Format**
 url: `content/update/<location id>` or `content/update/<content type>/<content id>`. Put json as request body.  
@@ -132,17 +128,16 @@ Here is a body example, where title&body are field identifiers
   "body":"Test body"}
  ```
 
-**content/delete**
-Delete a content
+## Delete a content
 
 Format:
 url: `content/delete?id=<location id>` or `content/delete?type=<content type>&id=<content id>`.
   
-## [operation]content/setpriority
+## Set priority
+content/setpriority
 
-## [Auth]auth/auth
-Get tokens to login
-
+## Login
+**Format:** auth/auth
 **Method:** POST
 
 **Body:** 
@@ -163,24 +158,34 @@ Access token and refresh token, example like below.
 ```
 
 
-## [Auth]auth/token/revoke
+## Logout
+**Format** auth/token/revoke
 
-## [Auth]auth/token/renew-refreshtoken
+## Renew refresh token
+**Format**auth/token/renew-refreshtoken
 
-## [Auth]auth/token/renew-accesstoken
+## Renew access token
+**Format**auth/token/renew-accesstoken
 
 
-## [user]user/current
+## Get current user's information
+**Format** user/current
 
-## [user]user/resetpassword
+## Request reseting password
+user/resetpassword
 
-## [user]user/resetpassword-confirm
+## Reset password
+user/resetpassword-confirm
 
-## [user]user/enable
+## Enable user
+**Format** user/enable
 
-## [content type]contenttype/get
+## Get content type definition
+**Format** contenttype/get
 
-## [utility]util/uploadfile
+## Upload a file
+**Format**util/uploadfile
 
-## [utility]util/uploadimage
+## Upload an image
+**Format** util/uploadimage
 
