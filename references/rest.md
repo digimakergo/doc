@@ -170,16 +170,19 @@ url: `content/delete?id=<location id>` or `content/delete?type=<content type>&id
 ## [operation]content/setpriority
 
 ## [Auth]auth/auth
-Method: POST
+Get tokens to login
 
-Body: 
+**Method:** POST
+
+**Body:** 
 
 ```json
 {"username":"<username or email>",
   "password":"<password>"}
  ```
  
-Response:
+**Response**:
+
 Access token and refresh token, example like below.
 ```json
 {
