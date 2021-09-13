@@ -18,6 +18,69 @@ nav_order: 2
 
 Consuming rest api needs authorization first to get access token, then in every rest api, the access token will be attched to the request header. Please see [references/rest](../references/rest) for full rest apis.
 
+## Response body
+All response will be in json, in a format like, regardless of returning error or not:
+```json
+{
+  "error": true,
+  "data": {
+  }
+}
+```
+
+A successful response can be like 
+```json
+{
+  "error": false,
+  "data": {
+    "list": [
+      {
+        "cid": 2,
+        "version": 48,
+        "published": 1617742097,
+        "modified": 1618044684,
+        "cuid": "c1mci4evvhfo3q8vofcg",
+        "status": 0,
+        "author": 1,
+        "related_articles": null,
+        "summary": "",
+        "title": "Test",
+        "useful_resources": null,
+        "id": 464,
+        "parent_id": 454,
+        "main_id": 464,
+        "identifier_path": "content/demosite/news/test",
+        "hierarchy": "1/3/454/464",
+        "depth": 4,
+        "content_type": "article",
+        "content_id": 2,
+        "language": "",
+        "name": "Test",
+        "is_hidden": false,
+        "is_invisible": false,
+        "priority": 0,
+        "uid": "c1mci4evvhfo3q8vofd0",
+        "section": "public",
+        "p": ""
+      }
+    ],
+    "count": 3
+  }
+}
+```
+
+A error response can be like 
+```json
+{
+  "error": true,
+  "data": {
+    "code": "10001",
+    "message": "Cann't get content type",
+    "detail": ""
+  }
+}
+```
+
 ## Authorization
 For consuming rest api, you need to have a authorization token first:``/api/auth/auth?username=<username>&password=<password>``
 
