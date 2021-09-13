@@ -178,6 +178,16 @@ Body:
 {"username":"<username or email>",
   "password":"<password>"}
  ```
+ 
+Response:
+Access token and refresh token, example like below.
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzE1MzgzNDcsInVzZXJfaWQiOjEsInVzZXJfbmFtZSI6IkFkbWluaXN0cmF0b3IgQWRtaW4ifQ.VV3yJW7q5oZ4PVMj8d-2m224MmOP7PG3QJCWPL3mv0w",
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzE1NDYxNDcsImd1aWQiOiI4MWZjZjYzMC02ZWFhLTQwMjctOGI1Zi1kZjc2YjgwY2JjNDgiLCJ1c2VyX2lkIjoxfQ.DegXqhzWML1sgENCnZVjC_udW77_m_rkV0Us7-CcP-M"
+}
+```
+
 
 ## [Auth]auth/token/revoke
 
