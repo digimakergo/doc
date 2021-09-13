@@ -16,31 +16,35 @@ has_doc: true
 {:toc}
 </details>
 
-## Common
+## Common response
 
-**Examples**
+Digimaker CMF will always return a json format. For a successful page it will be like below, where "error" is always false
 
-Get content by id:
-Request: `/content/get/3`
-Response:
 ```json
+
 {
-  "cid": 3,
-  "version": 0,
-  "published": 1560534450,
-  "modified": 1615464230,
-  "cuid": "bk1trcli6ekibbmo2cj0",
-  "status": 1,
-  "author": 1,
-  "author_name": "Administrator Admin",
-  "relations": {},
-  "folder_type": "site",
-  "summary": "<p>This is a demo site.</p>",
-  "title": "Demo",
-  "id": 3,
-  ...
+  "error": false,
+  "data": {
+    "cid": 3,
+    "version": 4,
+    "published": 1628163956,
+    "modified": 1628196214
+  }
 }
 
+```
+
+For error it will put error information into data and set "error" to true
+```json
+{
+  "error": true,
+  "data": {
+    "code": "10001",
+    "message": "Cann't get content type",
+    "detail": ""
+  }
+}
+```json
 
 
 ## [fetch]content/get
