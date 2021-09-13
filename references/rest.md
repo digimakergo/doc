@@ -170,6 +170,14 @@ url: `content/delete?id=<location id>` or `content/delete?type=<content type>&id
 ## [operation]content/setpriority
 
 ## [Auth]auth/auth
+Method: POST
+
+Body: 
+
+```json
+{"username":"<username or email>",
+  "password":"<password>"}
+ ```
 
 ## [Auth]auth/token/revoke
 
