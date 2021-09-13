@@ -16,7 +16,7 @@ has_doc: true
 {:toc}
 </details>
 
-## Basis
+## Common
 
 **Examples**
 
@@ -40,39 +40,7 @@ Response:
   "id": 3,
   ...
 }
-```
-Get content list:
-Request: `/content/list/folder?parent=3&level=1&sortby=priority%20desc%3Bmodified%20desc&limit=20&offset=0`
-Response:
-```json
-{
-  "list": [
-    {
-      "cid": 28,
-      "version": 0,
-      "published": 1614682043,
-      "modified": 1614682043,
-      "cuid": "c0v1feuvvhfup2usch5g",
-      "status": 0,
-      "author": 1,
-      "author_name": "Administrator Admin",
-      ...
-    },
-    {
-      "cid": 27,
-      "version": 0,
-      "published": 1614682022,
-      "modified": 1614682022,
-      "cuid": "c0v1f9mvvhfup2usch4g",
-      "status": 0,
-      "author": 1,
-      "author_name": "Administrator Admin",
-      ...
-    }
-  ],
-  "count": 2
-}
-```
+
 
 
 ## [fetch]content/get
