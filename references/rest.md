@@ -18,7 +18,7 @@ has_doc: true
 
 ## Common response
 
-Digimaker CMF will always return a json format. For a successful page it will be like below, where "error" is always false. All the response data will be inside "data"
+Digimaker CMF will always return a json format. For a successful page it will be like below, where "error" is always false. All th 'real' data will be inside "data"
 
 ```json
 {
