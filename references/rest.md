@@ -44,7 +44,7 @@ For error it will put error information into data and set "error" to true
     "detail": ""
   }
 }
-```json
+```
 
 
 ## [fetch]content/get
