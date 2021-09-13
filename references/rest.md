@@ -124,7 +124,7 @@ url: `content/update/<location id>` or `content/update/<content type>/<content i
   
 Here is a body example, where title&body are field identifiers
   ```json
-{"title":"Test",
+{ "title":"Test",
   "body":"Test body"}
  ```
 
@@ -143,7 +143,7 @@ content/setpriority
 **Body:** 
 
 ```json
-{"username":"<username or email>",
+{ "username":"<username or email>",
   "password":"<password>"}
  ```
  
