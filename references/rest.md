@@ -99,7 +99,7 @@ content/treemenu
 ## Create a content  
 **Format**
 
-url: `content/create/<parent location id>/<content type>`, with a json as request body.  
+url: `content/create/<content type>/<parent location id>`, with a json as request body.  Note: non-location content doesn't need parent location id.
 
 Here is a body example, where title&body are field identifiers
   ```json
