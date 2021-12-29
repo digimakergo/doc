@@ -5,21 +5,29 @@ parent: References
 permalink: /references/policies
 nav_order: 20
 ---
+poclieis.json defines policies, role identifiers and role variables.
 
-## policies.json
-poclieis.json define policies, role identifiers and role variables.
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
+## Policy operations
 Below are operations which can be set policies on
 
 | Operation        | Description  | 
 |:-------------|:------------------|
-| content/read           | Read content |
-| content/create           | Create content |
-| content/update | Update content   |
-| content/delete           | Delete content      |
-| access/manage            | Manage permission 
+| [content/read](#contentread)           | Read content |
+| [content/create](#contentcreate)           | Create content |
+| [content/update](#contentupdate) | Update content   |
+| [content/delete](#contentdelete)           | Delete content      |
+| access/manage            | Manage permission. No condition| 
 
-### Role identifier
+## Role identifier
 Also in policies.json it can define role identifier. Example:
 ```json
   "roles": {
@@ -51,6 +59,15 @@ Note: role variables can `NOT` be put inside array. It needs to be a whole condi
 
 
 ## Conditions of policy 
+
+### content/read
+
+| condition  | type  | Description  | 
+|:-----------|:----|:------------------|
+| contenttype    | string      | Content type to be read |
+| under    | int      | Location id where content can be read under(directly or indirectly)  |
+| author      | string       | Content's author id(as string), support `self` |
+
 
 ### content/create
 
