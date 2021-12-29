@@ -7,7 +7,7 @@ nav_order: 3
 ---
 
 # Permisssion
-Permission system of digimaker is essential to data management. The principle is to have the power of access control, at same time make it easy for developers to develop, maintain.
+The permission system of digimaker is essential for data management. The principle is to have the power of access control, at same time make it easy for developers to develop, maintain.
 
 Highlights:
 - Define permission rules in json file(configs/policies.json)
@@ -46,6 +46,8 @@ In screenshot above, we set a role's "under folder" to be "Demo" folder. In the 
   }
 }
 ```
+
+[See how to define and use role variable](../references/policies#role-variables)
 
 ## Typical permissions
 Typical permission are like
