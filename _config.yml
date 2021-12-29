@@ -30,7 +30,7 @@ github_username:  digimakergo
 logo: "/assets/images/digimaker.png"
 
 # Build settings
-theme: just-the-docs
+#theme: just-the-docs
 remote_theme: pmarsceill/just-the-docs
 
 
