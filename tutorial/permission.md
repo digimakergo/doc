@@ -33,7 +33,7 @@ Below is a policies example, under configs/policies.json. It means the user with
 ```
 
 ## Role variables
-Since role is a content, it's fields can be extended. It's possible to use role's field value as 'variable' in policies. This is useful for example multi-site editors, members, temporary access.
+Since role is a content, it's fields can be extended. It's possible to use role's field value as 'variable' in policies. This is useful for example multi-site editors, members, temporary access, where the real context is better done in administration console instead of config file.
 
 <img src="../assets/images/role_edit.png" width="700px" />
 
