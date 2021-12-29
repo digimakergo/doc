@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Consume rest api
+title: Rest api
 parent: Tutorial
 permalink: /tutorial/rest
 nav_order: 2
