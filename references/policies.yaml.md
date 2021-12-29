@@ -60,6 +60,8 @@ Note: role variables can `NOT` be put inside array. It needs to be a whole condi
 
 ## Conditions of policy 
 
+Note: below are for both locational content(eg. article) and non-location content(eg. image).
+
 ### content/read
 
 | condition  | type  | Description  | 
