@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Permission settings
+title: Permission
 parent: Tutorial
 permalink: /tutorial/permission
 nav_order: 5
@@ -11,6 +11,7 @@ Permission system of digimaker is essential to data management. The principle is
 
 Highlights:
 - Define permission rules in json file(configs/policies.json)
+- Content related permission like read/create/update/delete. Also customized permission&rules are supported
 - Support attribute-level permission, eg. some user can only create/update some fields
 - Support custom variables in role, which are role content fields
 - Can debug permission
@@ -21,7 +22,7 @@ Main concepts:
 
 
 ## Policy example
-Below is a policies example, under configs/policies.json:
+Below is a policies example, under configs/policies.json. It means the user with this policy will be able to create and read article without other restrictions.
 ```json
   {
     "operation": ["content/read", "content/create"],
