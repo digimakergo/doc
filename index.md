@@ -15,9 +15,9 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 ### Tutorials & articles
  - [Basic concepts](tutorial/basic-concepts)
- - [Consume rest api](tutorial/rest)
+ - [Rest api](tutorial/rest)
+ - [Permission](tutorial/permission) 
  - [Templating](tutorial/templating)
- - [Permission](tutorial/permission)
  - [Use client library(digimaker-ui)](tutorial/digimaker-ui)(tba)
  - [Extend server side](tutorial/server)(tba)
  - [Online log/debug tool](tutorial/debug)(tba)
