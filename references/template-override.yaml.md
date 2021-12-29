@@ -21,7 +21,7 @@ It means all folders in "full" view mode, and field "display_type" is "news" wil
 ## Override conditions
 Below are conditions for location content
 | Condition      | Description |
-| ----------- | ----------- |
+|:-------------- |:-----------|
 | id      | location id of the content       |
 | viewmode      | view mode, eg. full       |
 | site   | site identifier        |
