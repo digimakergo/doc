@@ -6,7 +6,7 @@ permalink: /tutorial/permission
 nav_order: 5
 ---
 
-## Permisssion
+# Permisssion
 Permission system of digimaker is essential to data management. The principle is to have the power of access control, at same time make it easy for developers to develop, maintain.
 
 Highlights:
@@ -20,7 +20,7 @@ Main concepts:
 - Policy, which defined a set of accesses
 
 
-### Policy example
+## Policy example
 Below is a policies example, under configs/policies.json:
 ```json
   {
@@ -31,10 +31,10 @@ Below is a policies example, under configs/policies.json:
   }
 ```
 
-### Role variables
+## Role variables
 Since role is a content, it's fields can be extended. It's possible to use role's field value as 'variable' in policies. This is useful for example multi-site editors, members, temporary access.
 
-<img src="../assets/images/role_edit.png" width="500px" />
+<img src="../assets/images/role_edit.png" width="700px" />
 
 In screenshot above, we set a role's "under folder" to be "Demo" folder. In the poclies if we have policy like below, users assgned to the editor role will be limited to read content under "demo". 
 ```json
