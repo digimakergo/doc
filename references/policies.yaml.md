@@ -25,7 +25,7 @@ Below are operations which can be set policies on
 | [content/create](#contentcreate)           | Create content |
 | [content/update](#contentupdate) | Update content   |
 | [content/delete](#contentdelete)           | Delete content      |
-| access/manage            | Manage permission. No condition| 
+| access/manage            | Manage permission. No condition | 
 
 ## Role identifier
 Also in policies.json it can define role identifier. Example:

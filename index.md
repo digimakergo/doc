@@ -24,10 +24,12 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 
 ### References
- - Templates: [Templating](references/template)
+ - Content types: [contenttype.json](references/contenttype)
+ - Permission: [policies.json](references/policies)
+ - Template: [Templating API](references/template), [template_override.yaml](references/template-override)
  - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
  - Server side: [Go API](references/go)
- - Configuration: [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
+ - Configuration: [dm.yaml](references/dm)
 
 ### Content Administration(editorial ui)
 Below is a basic screenshot of eui, which is customizable in tools, display, columns, themes etc, and is extendable for more features.
