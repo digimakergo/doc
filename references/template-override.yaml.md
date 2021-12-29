@@ -20,13 +20,13 @@ It means all folders in "full" view mode, and field "display_type" is "news" wil
 
 ## Override conditions
 Below are conditions for location content
-| Condition      | Description |
-|:-------------- |:-----------|
-| id      | location id of the content       |
-| viewmode      | view mode, eg. full       |
-| site   | site identifier        |
-| under   | matches content which are under this value(id)        |
-| level  | level under site root(1 is directly under) |
-| contenttype | content type of the content |
-| field_xxx   | matches fields value. Support fieldtypes: radion, checkbox, select       |
 
+| Condition        | Description          | 
+|:-------------|:------------------|
+| id           | location id of the content |
+| viewmode | view mode, eg. full    |
+| site           | site identifier      |
+| under           | matches content which are under this value(id) |
+| level           | level under site root(1 is directly under) |
+| contenttype | content type of the content |
+| field_\<field identifier\>   | matches fields value. Support fieldtypes: radion, checkbox, select       |
