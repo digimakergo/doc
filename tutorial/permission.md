@@ -3,7 +3,7 @@ layout: page
 title: Permission
 parent: Tutorial
 permalink: /tutorial/permission
-nav_order: 5
+nav_order: 3
 ---
 
 # Permisssion

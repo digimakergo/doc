@@ -3,7 +3,7 @@ layout: page
 title: Templating
 parent: Tutorial
 permalink: /tutorial/templating
-nav_order: 3
+nav_order: 5
 ---
 
 
