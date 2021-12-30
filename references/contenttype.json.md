@@ -50,6 +50,7 @@ A content type example
 
 
 ## Content type fields
+
 | key      | type  | Description       
 |:---------|:----|:---------------------|
 | identifier    | string    |  Identifier of the field  |
