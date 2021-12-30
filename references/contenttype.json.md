@@ -70,7 +70,7 @@ A content type example
 | text  |	Plain text, support mulitline| "multiline": true/false , "max_length":250| 
 | richtext |	Rich text with online editor |	“mode”:”compact/full”
 | select |	Dropdown | "list", eg:{"list": [{“text”: "Apple", "value": "apple" }...]} |
-| radio |	Radio, support 2 options (1/0) for now. default -1(not selected) | "options":["Yes", "No"] |
+| radio |	Radio, support 2 options ("1"/"0" - string value) for now. default "-1"(not selected) | "options":["Yes", "No"] |
 | datetime |	Date time |	“dateonly”: true/false
 | container| 	Container |  | 
 | checkbox |	Checkbox, value is int 0/1  |	 | 
