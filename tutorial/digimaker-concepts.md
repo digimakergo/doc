@@ -76,7 +76,7 @@ Below is an example of content definition(see [contenttype.json reference](../re
       },
  ```
 
-## Advanced: unon-location content or ORM entity?
+## Advanced: non-location content or ORM entity?
 
 Well in principle they are almost doing the same thing. You can use our api to manipulate those data, or use own api with own ORM, or both ways(mix our api with own ORM). 
 
