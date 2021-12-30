@@ -7,13 +7,30 @@ title: Home
 nav_order: 0
 ---
 
-Welcome to Digimaker CMF documentation!
+# Digimaker CMF Documentation
+{: .fs-9 }
+
+Digimaker CMF is a content management framework focusing on simplicity, flexibility, high performance.
+
+[Install demo project](#installation){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/digimakergo/digimaker){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+---
+
+## Get started 
 
 ### Installation
 The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project readme has explained code structure and basic apis.
 
 
 ### Tutorials & articles
+Digimaker CMF can be used to build web site, web application or being embeded to existing solution.
+
+Normally you can just configure content model(a json file), then you are able to manage content.   
+
+- If you want to develop website, you can start to [write template](tutorial/templating). 
+- If you want to develop web application, you can check our [rest api](tutorial/rest)
+
+Here are some tortuials:
  - [Basic concepts](tutorial/basic-concepts)
  - [Rest api](tutorial/rest)
  - [Permission](tutorial/permission) 
@@ -23,7 +40,7 @@ The simpliest way to install is to get sample code and run: [https://github.com/
  - [Online log/debug tool](tutorial/debug)(tba)
 
 
-### References
+#### References
  - Content types: [contenttype.json](references/contenttype)
  - Permission: [policies.json](references/policies)
  - Template: [Templating API](references/template), [template_override.yaml](references/template-override)
@@ -31,11 +48,15 @@ The simpliest way to install is to get sample code and run: [https://github.com/
  - Server side: [Go API](references/go)
  - Configuration: [dm.yaml](references/dm)
 
-### Content Administration(editorial ui)
+## Content Administration(editorial ui)
 Below is a basic screenshot of eui, which is customizable in tools, display, columns, themes etc, and is extendable for more features.
 
 <img src="https://raw.githubusercontent.com/digimakergo/eui/master/doc/eui-1.png" width="700px" />
 
+
+## About
+### License
+Digimaker CMF is under MIT license
 
 ### Roadmap
 
