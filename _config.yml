@@ -44,8 +44,6 @@ aux_links:
     - "//github.com/digimakergo/digimaker"
   "digimaker.org":
     - "http://digimaker.org"
-  "Norsk":
-    - "http://digimaker.org/no" 
   "中文":
     - "http://digimaker.org/cn"  
 
