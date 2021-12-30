@@ -2,7 +2,7 @@
 layout: page
 title: Digimaker concepts
 parent: Tutorial
-permalink: /digimaker-concepts
+permalink: /tutorial/digimaker-concepts
 nav_order: 1
 ---
 
