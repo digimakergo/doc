@@ -35,7 +35,7 @@ A content type example
       },
 ```
 
-## Content type
+## Content type definition
 
 | key      | type  | Description       
 |:---------|:----|:---------------------|
@@ -46,10 +46,10 @@ A content type example
 | has_location |bool       | Whether the content has location or not. Read [here](../tutorial/digimaker-concepts#location-content-and-non-location-content) to judge if you need location|
 | has_location_id   |bool     | For non-location content, true if you need to put content under some location content and use it as category&permission for instance.      |
 | name_pattern    | string    | For location content, name can be generated from field's value , `{"<field identifer>"}` will be replaced with identifier's real value    |
-| fields    | array<>    |  fields with order  |
+| fields    | array\<field definition\>    |  fields with order  |
 
 
-## Content type fields
+## Content type field definition
 
 | key      | type  | Description       
 |:---------|:----|:---------------------|
@@ -62,7 +62,7 @@ A content type example
 
 
 
-## Field types
+## Built in field types
 
 | key       | Description   | Parameters 
 |:--------- |:---------------------|:----|
