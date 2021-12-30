@@ -65,6 +65,7 @@ content/version
 content/treemenu
 
 ## Fetch content list
+Fetch content list, with user's permission considered.
 
 **Format**
 
@@ -80,7 +81,7 @@ content/treemenu
 |  offset    | 0 | Which position to fetch records |
 |  sortby    | priority desc,id desc | sort by. Support multi fields |
 |  field.*    | field.title | filter by field |  
-|  localtion.*       | location.priority | filter by location's attribute. eg. priority, publish. modified  |
+|  location.*       | location.priority | filter by location's attribute. eg. priority, publish. modified  |
   
 
 **Result**
