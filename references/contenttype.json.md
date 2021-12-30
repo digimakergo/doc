@@ -67,9 +67,10 @@ A content type example
 | key       | Description   | Parameters 
 |:--------- |:---------------------|:----|
 | int  |	Integer. default value is -1(not 0)| | 
-| text  |	Plain text, support mulitline| "multiline": true/false | 
+| text  |	Plain text, support mulitline| "multiline": true/false , "max_length":250| 
 | richtext |	Rich text with online editor |	“mode”:”compact/full”
-| select |	Dropdown | "list", eg:{"list": [{“text”: "Apple", "value": "apple" }...]}
+| select |	Dropdown | "list", eg:{"list": [{“text”: "Apple", "value": "apple" }...]} |
+| radio |	Radio, support 2 options (1/0) for now. default -1(not selected) | "options":["Yes", "No"] |
 | datetime |	Date time |	“dateonly”: true/false
 | container| 	Container |  | 
 | checkbox |	Checkbox, value is int 0/1  |	 | 
