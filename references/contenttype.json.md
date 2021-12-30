@@ -67,7 +67,7 @@ A content type example
 | key       | Description   | Parameters 
 |:--------- |:---------------------|:----|
 | int  |	Integer. default value is -1(not 0)| | 
-| text  |	Plain text| support mulitline| "multiline": true/false | 
+| text  |	Plain text, support mulitline| "multiline": true/false | 
 | richtext |	Rich text with online editor |	“mode”:”compact/full”
 | select |	Dropdown | "list", eg:{"list": [{“text”: "Apple", "value": "apple" }...]}
 | datetime |	Date time |	“dateonly”: true/false
