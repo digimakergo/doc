@@ -30,17 +30,15 @@ Normally you can just configure content model(a json file), then you are able to
 - If you want to develop website, you can start to [write template](tutorial/templating). 
 - If you want to develop web application, you can check our [rest api](tutorial/rest)
 
-Here are some tortuials:
- - [Basic concepts](tutorial/basic-concepts)
- - [Rest api](tutorial/rest)
- - [Permission](tutorial/permission) 
- - [Templating](tutorial/templating)
+More articles:
+ - [Permission](tutorial/permission)
  - [Use client library(digimaker-ui)](tutorial/digimaker-ui)(tba)
  - [Extend server side](tutorial/server)(tba)
  - [Online log/debug tool](tutorial/debug)(tba)
 
+Read [Digimaker concepts](tutorial/digimaker-concepts) to understand our design concepts.
 
-#### References
+### References
  - Content types: [contenttype.json](references/contenttype)
  - Permission: [policies.json](references/policies)
  - Template: [Templating API](references/template), [template_override.yaml](references/template-override)
