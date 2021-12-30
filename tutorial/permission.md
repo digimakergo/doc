@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Permission
+title: Permission introduction
 parent: Tutorial
 permalink: /tutorial/permission
 nav_order: 3
 ---
 
-# Permisssion
+# Permisssion introduction
 The permission system of digimaker is essential for data management. The principle is to have the power of access control, at same time make it easy for developers to develop, maintain.
 
 Highlights:

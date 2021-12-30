@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rest api
+title: Use rest api
 parent: Tutorial
 permalink: /tutorial/rest
 nav_order: 2
@@ -16,7 +16,7 @@ nav_order: 2
 {:toc}
 </details>
 
-Consuming rest api needs authorization first to get access token, then in every rest api, the access token will be attched to the request header. Please see [references/rest](../references/rest) for full rest apis.
+Using rest api needs authorization first to get access token, then in every rest api, the access token will be attched to the request header. Please see [references/rest](../references/rest) for full rest apis.
 
 ## Response body
 All response will be in json, in a format like, regardless of returning error or not:

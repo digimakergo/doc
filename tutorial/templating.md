@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Templating
+title: Website templating
 parent: Tutorial
 permalink: /tutorial/templating
 nav_order: 5
