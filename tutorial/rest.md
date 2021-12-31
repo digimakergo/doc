@@ -46,7 +46,7 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mjg1NDI3NjEsInVzZXJfaWQi
 ```
 
 ### Renew access token
-If access expired it will return status code `440`, it's needed to reiew access token from refresh token.
+If access token expires it will return status code `440`, it's needed to renew access token from refresh token.
 ```
 /auth/token/access/renew?token=<refresh token>
 ```
@@ -82,19 +82,7 @@ A successful response can be like
         "id": 464,
         "parent_id": 454,
         "main_id": 464,
-        "identifier_path": "content/demosite/news/test",
-        "hierarchy": "1/3/454/464",
-        "depth": 4,
-        "content_type": "article",
-        "content_id": 2,
-        "language": "",
-        "name": "Test",
-        "is_hidden": false,
-        "is_invisible": false,
-        "priority": 0,
-        "uid": "c1mci4evvhfo3q8vofd0",
-        "section": "public",
-        "p": ""
+        "identifier_path": "content/demosite/news/test"
       }
     ],
     "count": 3
