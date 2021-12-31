@@ -72,8 +72,7 @@ For error it will put error information into data and set "error" to true
 }
 ```
 
-
-
+## API details
 
 ### Fetch a content
 
