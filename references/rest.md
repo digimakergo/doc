@@ -16,6 +16,31 @@ has_doc: true
 {:toc}
 </details>
 
+## Rest API List
+| Operation        | Description  | 
+|:-------------|:------------------|
+| **Content**|
+| [content/get](#fetch-a-content)| Fetch a content |
+| [content/tree](#fetch-a-tree)| Fetch a content tree |
+| [content/list](#fetch-content-list)| Fetch content list |
+| [content/create](#create-content)| Create content |
+| [content/move](#move-content)| Move content |
+| [content/update](#update-content)| Update content |
+| [content/delete](#delete-content)| Delete content |
+| [content/set-priority](#set-priority)| Set priority |
+|**Authorization**|
+| [auth/auth](#login)| Auth to get token to login |
+| [auth/revoke](#logout)| Revoke token to logout |
+| [auth/renew](#renew-access-token)| Renew access token |
+|**User**|
+| [user/current](#get-current-users-information)| 
+| [user/reset-password](#request-reseting-password)| Request reseting password   |
+| [user/resetpassword-confirm](#reset-password)| Confirm reset passwork link |
+| [user/enable](#enabledisable-user)| Enable/Disable user |
+|**Utility**|
+|[util/uploadfile](#util/uploadfile)|Upload file|
+|[util/uploadimage](#util/uploadimage)|Upload image|
+
 ## Common response
 
 Digimaker CMF will always return a json format. For a successful page it will be like below, where "error" is always false. All th 'real' data will be inside "data"
@@ -46,7 +71,9 @@ For error it will put error information into data and set "error" to true
 ```
 
 
-## Fetch a content
+
+
+### Fetch a content
 
 **Format**
 `content/get/<content type>/<id>`
@@ -58,13 +85,13 @@ JSON of the content
 Example: `content/get/article/1`
 
 
-## Fetch a version
+### Fetch a version
 content/version
 
-## Fetch a tree
+### Fetch a tree
 content/treemenu
 
-## Fetch content list
+### Fetch content list
 Fetch content list, with user's permission considered.
 
 **Format**
@@ -97,7 +124,7 @@ Fetch content list, with user's permission considered.
 }  
 ```
 
-## Create a content  
+### Create content  
 **Format**
 
 url: `content/create/<content type>/<parent location id>`, with a json as request body.  Note: non-location content doesn't need parent location id.
@@ -115,10 +142,10 @@ Here is a body example, where title&body are field identifiers
  
   
 
-## Move a content
+### Move content
 **Format:** content/move
 
-## Update a content
+### Update content
   
 **Format**
 url: `content/update/<location id>` or `content/update/<content type>/<content id>`. Put json as request body.  
@@ -129,15 +156,15 @@ Here is a body example, where title&body are field identifiers
   "body":"Test body"}
  ```
 
-## Delete a content
+### Delete content
 
 Format:
 url: `content/delete?id=<location id>` or `content/delete?type=<content type>&id=<content id>`.
   
-## Set priority
+### Set priority
 content/setpriority
 
-## Login
+### Login
 **Format:** auth/auth
 **Method:** POST
 
@@ -159,31 +186,28 @@ Access token and refresh token, example like below.
 ```
 
 
-## Logout
+### Logout
 **Format** auth/token/revoke
 
-## Renew access token
+### Renew access token
 **Format**auth/token/renew
 
 
-## Get current user's information
+### Get current user's information
 **Format** user/current
 
-## Request reseting password
+### Request reseting password
 user/resetpassword
 
-## Reset password
+### Reset password
 user/resetpassword-confirm
 
-## Enable user
+### Enable/Disable user
 **Format** user/enable
 
-## Get content type definition
-**Format** contenttype/get
-
-## Upload a file
+### Upload a file
 **Format**util/uploadfile
 
-## Upload an image
+### Upload an image
 **Format** util/uploadimage
 
