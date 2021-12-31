@@ -18,10 +18,6 @@ nav_order: 5
 
 Templating is a typical way to write web pages. With digimaker sitekit, you can write templates smoothly. 
 
-- Multi sites
-- Template override configuration
-- Template functions
-
 Digimaker's template not only can be used in website, but also any html-generating context, eg. pdf generating from html, email sending.
 
 ## Set up site
@@ -48,7 +44,7 @@ sites:
 ## Templating
 
 ### Base and content template
-Base template defines the layout, which is in base.html (eg. web/template/demo/base.html). 
+Base template defines the layout, which is in base.html (eg. web/template/demo/base.html).Content template is invoked when visiting a content page. Content page uses `extends` to 'inherit' base template.
 
 Digimaker uses block in templating, meaning base.html defines block and real template fills in value. In example below, base.html defines ``content`` block and is filled in ``article/full.html``
 
@@ -59,7 +55,7 @@ base.html
 </div>{% endraw %}
 ```
 
-article/full.html
+In article full view template article/full.html
 ```html
 {% raw %}{% extends "../base.html" %}
 
@@ -83,10 +79,9 @@ article/full.html
 
 ```
 
+### Template grammar
 
-Digimaker by default provides nice-url, so if you use ``<a href="{% raw %}{{dm.niceurl(content)}}{% endraw %}">News</a>``, it will automically load the news content page.
-
-For full template language, please vist [Pongo2's page](https://github.com/flosch/pongo2)
+For full template language grammar, please vist [Pongo2's page](https://github.com/flosch/pongo2)
 
 ## Template override
 When visiting a content page, Digimaker will try to find template of the content. Below is an template override example(under ``configs/template_override.yaml``) of visiting a folder, 
@@ -102,6 +97,9 @@ There are many possiblities in setting the override rule, eg. by content type, i
   
 > *Note: if there are several rules matching one content, the topest will be used. There is debug tool which can debug which template is used and the matching process.*
   
+## Nice url
+
+Digimaker by default provides nice-url, so if you use ``<a href="{% raw %}{{dm.niceurl(content)}}{% endraw %}">News</a>``, it will link to the news content page.  
  
 ## Template functions & filters
 
