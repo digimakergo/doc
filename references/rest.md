@@ -162,11 +162,8 @@ Access token and refresh token, example like below.
 ## Logout
 **Format** auth/token/revoke
 
-## Renew refresh token
-**Format**auth/token/renew-refreshtoken
-
 ## Renew access token
-**Format**auth/token/renew-accesstoken
+**Format**auth/token/renew
 
 
 ## Get current user's information
