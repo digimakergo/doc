@@ -5,7 +5,7 @@ parent: Tutorial
 permalink: /tutorial/templating
 nav_order: 5
 ---
-
+# Templating
 
 <details open markdown="block">
   <summary>
@@ -16,10 +16,15 @@ nav_order: 5
 {:toc}
 </details>
 
-Templating is a typical way to write website pages. Digimaker website kits can implement multi sites, provide a powerful template override configuration, and template functions.
+Templating is a typical way to write web pages. With digimaker sitekit, you can write templates smoothly. 
 
-## Site setting
+- Multi sites
+- Template override configuration
+- Template functions
 
+Digimaker's template can not be used in website, but any html-generating context, eg. pdf generating from html, email sending.
+
+## Set up site
 In configs/dm.yaml section sites you will see configuration below:
 ```yaml
 sites:
@@ -33,15 +38,16 @@ sites:
       - "test" # todo: idea to support package like "<packagename>, test"
 ```
 
-host: the website visit host, including port if there is
-path: path after the host if there is
-root: root content of the site
-default: default content of the site, for index page
-template_folder: folder under template folder(by default it's under ``web/templates``)(can be changed in ``dm.yaml/general/template_folder``)
+- host: the website visit host, including port if there is
+- path: prefix of the site path if there is
+- root: root content id of the site
+- default: default content id of the site, for index page
+- template_folder: folder under template folder(by default it's under ``web/templates``)(can be changed in ``dm.yaml/general/template_folder``)
 
 
-## Base template
+## Templating
 
+### Base and content template
 Base template defines the layout, which is in base.html (eg. web/template/demo/base.html). 
 
 Digimaker uses block in templating, meaning base.html defines block and real template fills in value. In example below, base.html defines ``content`` block and is filled in ``article/full.html``
@@ -82,7 +88,7 @@ Digimaker by default provides nice-url, so if you use ``<a href="{% raw %}{{dm.n
 
 For full template language, please vist [Pongo2's page](https://github.com/flosch/pongo2)
 
-## Templating content page
+## Template override
 When visiting a content page, Digimaker will try to find template of the content. Below is an template override example(under ``configs/template_override.yaml``) of visiting a folder, 
 so for any folder content type, it will use ``folder/full.html``:
 
@@ -94,10 +100,12 @@ so for any folder content type, it will use ``folder/full.html``:
 
 There are many possiblities in setting the override rule, eg. by content type, id, field value, author, etc. For more template override rules, see [references/template-override](../references/template-override)
   
-Note: if there are several rules matching one content, the topest will be used. There is debug tool which can debug which template is used and the matching process.
+> *Note: if there are several rules matching one content, the topest will be used. There is debug tool which can debug which template is used and the matching process.*
   
  
-For template function refrences, visit [functions/filters](../references/template)   
+## Template functions & filters
+
+For template function&filter refrences, visit [functions/filters](../references/template)   
 
 
 
