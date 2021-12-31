@@ -6,6 +6,7 @@ permalink: /tutorial/rest
 nav_order: 2
 ---
 
+# Use rest api
 
 <details open markdown="block">
   <summary>
@@ -18,13 +19,45 @@ nav_order: 2
 
 Using rest api needs authorization first to get access token, then in every rest api, the access token will be attched to the request header. Please see [references/rest](../references/rest) for full rest apis.
 
-## Response body
+## Authorization
+For consuming rest api, you need to have a authorization token first:``/api/auth/auth``
+
+```json
+{
+  "username":"<user name>",
+  "password":"<password>"
+}
+```
+
+
+It will return like
+
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mjg1NDI3NjEsInVzZXJfaWQiOjEsInVzZXJfbmFtZSI6IkFkbWluaXN0cmF0b3IgQWRtaW4ifQ.6bTKFlf2E0I7hrSZ2sPqsTXurNwygKV3qmVHWdZd6Q0",
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mjg1NTA1NjEsImd1aWQiOiJhMzA5NmVhNC0zZDhkLTQ1OTAtOGNlYS02MTY5YTgxYjBjYTIiLCJ1c2VyX2lkIjoxfQ.v23l_Ofi6-SRxa4agS7kRoOrhAxCpWk90NoOIq-bcGs"
+}
+```
+
+Then you put access_token in every rest api's header, refresh_token can be stored in cookie(or local storage) to rewnew access token. The http request header's ``Authorization`` will look like
+
+```
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mjg1NDI3NjEsInVzZXJfaWQiOjEsInVzZXJfbmFtZSI6IkFkbWluaXN0cmF0b3IgQWRtaW4ifQ.6bTKFlf2E0I7hrSZ2sPqsTXurNwygKV3qmVHWdZd6Q0
+```
+
+### Renew access token
+If access expired it will return status code `440`, it's needed to reiew access token from refresh token.
+```
+/auth/token/access/renew?token=<refresh token>
+```
+It will return standard response format where `data` is the new access token.
+
+## Common response body
 All response will be in json, in a format like, regardless of returning error or not:
 ```json
 {
-  "error": true,
-  "data": {
-  }
+  "error": true/false,
+  "data": <data object>
 }
 ```
 
@@ -80,25 +113,6 @@ A error response can be like
   }
 }
 ```
-
-## Authorization
-For consuming rest api, you need to have a authorization token first:``/api/auth/auth?username=<username>&password=<password>``
-
-It will return like
-
-```json
-{
-  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mjg1NDI3NjEsInVzZXJfaWQiOjEsInVzZXJfbmFtZSI6IkFkbWluaXN0cmF0b3IgQWRtaW4ifQ.6bTKFlf2E0I7hrSZ2sPqsTXurNwygKV3qmVHWdZd6Q0",
-  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mjg1NTA1NjEsImd1aWQiOiJhMzA5NmVhNC0zZDhkLTQ1OTAtOGNlYS02MTY5YTgxYjBjYTIiLCJ1c2VyX2lkIjoxfQ.v23l_Ofi6-SRxa4agS7kRoOrhAxCpWk90NoOIq-bcGs"
-}
-```
-
-Then you put access_token in every rest api's header, refresh_token can be stored in cookie to rewnew access token. The http request header's ``Authorization`` will look like
-
-```
-Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mjg1NDI3NjEsInVzZXJfaWQiOjEsInVzZXJfbmFtZSI6IkFkbWluaXN0cmF0b3IgQWRtaW4ifQ.6bTKFlf2E0I7hrSZ2sPqsTXurNwygKV3qmVHWdZd6Q0
-```
-
 
 ## Example 1: get content 
 
