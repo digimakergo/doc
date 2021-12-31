@@ -5,7 +5,7 @@ parent: Tutorial
 permalink: /tutorial/digimaker-concepts
 nav_order: 1
 ---
-
+# Digimaker concepts
 <details open markdown="block">
   <summary>
     Contents
@@ -14,8 +14,6 @@ nav_order: 1
 1. TOC
 {:toc}
 </details>
-
-# Digimaker concepts
 
 This page explains some ideas behind Digimaker CMF, eg. content model, architecture to help understanding it.
 

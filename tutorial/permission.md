@@ -7,6 +7,15 @@ nav_order: 3
 ---
 
 # Permisssion introduction
+<details open markdown="block">
+  <summary>
+    Contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 The permission system of digimaker is essential for data management. The principle is to have the power of access control, at same time make it easy for developers to develop, maintain.
 
 Highlights:

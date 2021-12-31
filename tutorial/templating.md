@@ -6,7 +6,6 @@ permalink: /tutorial/templating
 nav_order: 5
 ---
 # Templating
-
 <details open markdown="block">
   <summary>
     Templating
