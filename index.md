@@ -19,7 +19,7 @@ Digimaker CMF is a content management framework focusing on simplicity, flexibil
 ## Get started 
 
 ### Installation
-The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project readme has explained code structure and basic apis.
+The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project [readme](https://github.com/digimakergo/dmdemo#readme) has explained code structure and basic apis.
 
 
 ### Tutorials & articles
