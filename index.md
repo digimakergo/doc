@@ -30,13 +30,15 @@ Normally you can just configure content model(a json file), then you are able to
 - If you want to develop website, you can start to [write template](tutorial/templating). 
 - If you want to develop web application, you can check our [rest api](tutorial/rest)
 
+To know how to permission, see [Permission introduction](tutorial/permission).
+
+Read [Digimaker concepts](tutorial/digimaker-concepts) to understand our design concepts.
+
 More articles:
- - [Permission](tutorial/permission)
  - [Use client library(digimaker-ui)](tutorial/digimaker-ui)(tba)
  - [Extend server side](tutorial/server)(tba)
  - [Online log/debug tool](tutorial/debug)(tba)
 
-Read [Digimaker concepts](tutorial/digimaker-concepts) to understand our design concepts.
 
 ### References
  - Content types: [contenttype.json](references/contenttype)
