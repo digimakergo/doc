@@ -22,7 +22,7 @@ Templating is a typical way to write web pages. With digimaker sitekit, you can 
 - Template override configuration
 - Template functions
 
-Digimaker's template can not be used in website, but any html-generating context, eg. pdf generating from html, email sending.
+Digimaker's template not only can be used in website, but also any html-generating context, eg. pdf generating from html, email sending.
 
 ## Set up site
 In configs/dm.yaml section sites you will see configuration below:
