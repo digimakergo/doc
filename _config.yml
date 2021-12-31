@@ -42,7 +42,7 @@ color_scheme: digimaker
 aux_links:
   "digimaker.org":
     - "http://digimaker.org"
-  "Github page":
+  "Github project":
     - "//github.com/digimakergo/digimaker"
   "中文":
     - "http://digimaker.org/cn"  
