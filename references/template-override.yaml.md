@@ -55,4 +55,4 @@ content_view:
 
 Other typical include conditions can be `viewmode`, `contenttype`, `under`, even `field_<field identifier>` - bacally all override conditions can be used as condition in `include`.
 
-> Note: The template engine will proceed `include` override files first(in the order of matched file order), then override_template.yaml's rules itself, regardless of where the `include` is placed. 
+>*Note: The template engine will proceed `include` override files first(in the order of matched file order), then override_template.yaml's rules itself, regardless of where the `include` is placed.*
