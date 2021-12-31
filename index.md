@@ -10,7 +10,7 @@ nav_order: 0
 # Digimaker CMF Documentation
 {: .fs-9 }
 
-Digimaker CMF is a content management framework focusing on simplicity, flexibility, high performance.
+Digimaker CMF is a content management framework focusing on simplicity, flexibility and performance.
 
 [Get started](#get-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View on GitHub](https://github.com/digimakergo/digimaker){: .btn .fs-5 .mb-4 .mb-md-0 }
 
