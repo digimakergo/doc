@@ -55,18 +55,14 @@ base.html
 
 In article full view template article/full.html
 ```html
-{% raw %}
-{% extends "../base.html" %}
+{% raw %}{% extends "../base.html" %}
 
 {%block content%}
 <div class="{{content.ContentType}} full">
     <h2>{{content.Name}}</h2>
     <div class="article-author">created by {{content.AuthorName}}</div>
-
     {{output_field( "summary", content )}}
-
     {{output_field( "body", content )}}
-
 </div>
 {%endblock%}{% endraw %}
 ```
