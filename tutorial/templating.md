@@ -55,26 +55,20 @@ base.html
 
 In article full view template article/full.html
 ```html
-{% raw %}{% extends "../base.html" %}
+{% raw %}
+{% extends "../base.html" %}
 
-{% block content%}
+{%block content%}
 <div class="{{content.ContentType}} full">
-
     <h2>{{content.Name}}</h2>
-    {%if content.Summary%}
-    <div class="summary">
-        {{content.Summary|safe}}
-    </div>
-    {%endif%}    
+    <div class="article-author">created by {{content.AuthorName}}</div>
 
-    {%if content.Body%}
-    <div class="summary">
-        {{content.Body|safe}}
-    </div>
-    {%endif%} 
+    {{output_field( "summary", content )}}
+
+    {{output_field( "body", content )}}
+
 </div>
 {%endblock%}{% endraw %}
-
 ```
 
 >*When visiting content from a url, it will try to find template which matches content's view in `full` viewmode.(See `template override` below for more about override)*
@@ -98,7 +92,7 @@ There are many possiblities in setting the override rule, eg. by content type, i
 > *Note: if there are several rules matching one content, the topest will be used. There is debug tool which can debug which template is used and the matching process.*
   
 
-Also you can use `include` to group override rule based on eg. `site`, `viewmode`, `"view section"`(content or field or others), see [Include other override files](../references/template-override#include-other-override-files).
+Also you can use `include` to group override rules based on eg. `site`, `viewmode`, `"view section"`(content or field or others), see [Include other override files](../references/template-override#include-other-override-files).
 
 ## Nice url
 
