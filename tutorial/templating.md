@@ -21,6 +21,8 @@ Digimaker's template not only can be used in website, but also any html-generati
 
 The [template override](#template-override) provides powerful configuration so you can organize template files, template blocks, and reused templates well.
 
+> *Note: Digimaker doesn't provide session based authorization. So for displaying content needing login, we suggest to use rest api with client rendering - react/vue/angular or jquery.*
+
 ## Set up site
 In configs/dm.yaml section sites you will see configuration below:
 ```yaml
