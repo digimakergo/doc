@@ -38,10 +38,12 @@ Include allowes you to include another template override file(mostly in yaml). H
 ```yaml
 include:
     - site: dmdemo
+      template_folder: "sites/demo" 
       file: "override_sites/dmdemo" # don't include file format since it supports yaml, json
 ```
 The example means for all site identifier `dmdemo` it will try to look up override rule under override_sites/dmdemo.yaml first. 
 
+Note: `template_folder` means all the templates matched in the include file need to be under this folder, except the template path starting from `~/`, which will alway look for tempalte root folder(by default it's `web/templates`).
 
 Then in `override_sites/dmdemo.yaml` it looks like this - no site needed because it's filtered our by the include rule.
 

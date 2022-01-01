@@ -28,17 +28,12 @@ sites:
     #path: "demo"
     root: 3
     default: 3
-    template_folder:
-      - "demo"  #first template folder will be used for base template(layout)
-      - "test" # todo: idea to support package like "<packagename>, test"
 ```
 
 - host: the website visit host, including port if there is
 - path: prefix of the site path if there is
 - root: root content id of the site
 - default: default content id of the site, for index page
-- template_folder: folder under template folder(by default it's under ``web/templates``)(can be changed in ``dm.yaml/general/template_folder``)
-
 
 ## Templating
 
@@ -96,6 +91,9 @@ There are many possiblities in setting the override rule, eg. by content type, i
   
 > *Note: if there are several rules matching one content, the topest will be used. There is debug tool which can debug which template is used and the matching process.*
   
+
+Also you can use `include` to group override rule based on eg. `site`, `viewmode`, `"view section"`(content or field or others), see [Include other override files](../references/include-other-override-files).
+
 ## Nice url
 
 Digimaker by default provides nice-url, so if you use ``<a href="{% raw %}{{dm.niceurl(content)}}{% endraw %}">News</a>``, it will link to the news content page.  
