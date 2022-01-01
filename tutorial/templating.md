@@ -19,12 +19,12 @@ Templating is a typical way to write web pages. With digimaker sitekit, you can 
 
 Digimaker's template can be used in not only website, but also in any html-generating context, eg. pdf generating from html, email sending.
 
-The [template override](#template-override) provides powerful configuration so you can organize template files, template blocks, and reused templates well.
+The [template override](#template-override) provides condition-based rules for template files, so you can organize template files, template blocks, and reused templates better.
 
-> *Note: Digimaker doesn't provide session based authorization. So for displaying content needing login, we suggest to use rest api with client rendering - react/vue/angular or jquery.*
+> *Note: Digimaker doesn't have session based authorization. So for displaying content needing login, we suggest to use rest api with client rendering - react/vue/angular or jquery.*
 
 ## Set up site
-In configs/dm.yaml section sites you will see configuration below:
+In configs/dm.yaml `sites` section you will see configuration below:
 ```yaml
 sites:
   - identifier: dmdemo
