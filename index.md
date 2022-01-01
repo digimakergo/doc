@@ -23,7 +23,7 @@ The simpliest way to install is to get sample code and run: [https://github.com/
 
 
 ### Tutorials & articles
-Digimaker CMF can be used to build web site, web application or being embeded to existing solution.
+Digimaker CMF can be used to build web site, web application or being embeded to existing system.
 
 Normally you can just configure content model(a json file), then you are able to manage content.   
 

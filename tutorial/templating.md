@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Website templating
+title: Website & Templating
 parent: Tutorial
 permalink: /tutorial/templating
 nav_order: 5
 ---
-# Templating
+# Site & Templating
 <details open markdown="block">
   <summary>
     Templating
@@ -17,7 +17,7 @@ nav_order: 5
 
 Templating is a typical way to write web pages. With digimaker sitekit, you can write templates smoothly. 
 
-Digimaker's template not only can be used in website, but also any html-generating context, eg. pdf generating from html, email sending.
+Digimaker's template can be used in not only website, but also in any html-generating context, eg. pdf generating from html, email sending.
 
 The [template override](#template-override) provides powerful configuration so you can organize template files, template blocks, and reused templates well.
 
@@ -76,6 +76,8 @@ In article full view template article/full.html
 {%endblock%}{% endraw %}
 
 ```
+
+>*When visiting content from a url, it will try to find template which matches content's view in `full` viewmode.(See `template override` below for more about override)*
 
 ### Template grammar
 
