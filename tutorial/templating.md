@@ -94,7 +94,7 @@ There are many possiblities in setting the override rule, eg. by content type, i
 > *Note: if there are several rules matching one content, the topest will be used. There is debug tool which can debug which template is used and the matching process.*
   
 
-Also you can use `include` to group override rule based on eg. `site`, `viewmode`, `"view section"`(content or field or others), see [Include other override files](../references/include-other-override-files).
+Also you can use `include` to group override rule based on eg. `site`, `viewmode`, `"view section"`(content or field or others), see [Include other override files](../references/template-override#include-other-override-files).
 
 ## Nice url
 
