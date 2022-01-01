@@ -2,7 +2,7 @@
 layout: page
 title: Cli Tool
 parent: Tutorial
-permalink: /tutorial/templating
+permalink: /tutorial/cli-tool
 nav_order: 10
 ---
 
