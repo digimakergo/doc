@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cli Tool
+title: Cli tool
 parent: Tutorial
 permalink: /tutorial/cli-tool
 nav_order: 10
