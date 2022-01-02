@@ -42,7 +42,7 @@ sites:
 ## Templating
 
 ### Content template
-When visiting content from a url, it will try to find template in `full` viewmode.(See `template override` below for more about override with viewmode).
+When visiting content from a url, it will try to find content template(which can be overrided in override files's `content_view` section) in `full` viewmode.(See `template override` below for more about override with viewmode).
 
 An article's page may look like below(under article/full.html)
 ```html
