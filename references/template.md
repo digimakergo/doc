@@ -26,6 +26,19 @@ We are using [Pongo2](https://github.com/flosch/pongo2) as template engine, whic
 Check here to see all their built in/add-on filters: [https://github.com/flosch/pongo2/blob/master/docs/filters.md](https://github.com/flosch/pongo2/blob/master/docs/filters.md)
 
 
+## Content template variables
+
+When visiting a content, these variables are provided
+
+| Variable   | Type     | Description  | 
+|:---------|:----|:------------------|
+|root| contenttype.ContentTyper entity |the root content of this site|
+|default| contenttype.ContentTyper entity |  default content type|
+|viewmode| string| "full" when visiting|
+|site| string|   site identifier|
+|sitepath| string| site path which matches defined path in site settings(in dm.yaml). For example in example.com/en `en` is the sitepath|
+
+
 ## Functions in digimaker
 
 ### Contents
