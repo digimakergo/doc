@@ -41,19 +41,10 @@ sites:
 
 ## Templating
 
-### Base and content template
-Base template defines the layout, which is in base.html (eg. web/template/demo/base.html).Content template is invoked when visiting a content page. Content page uses `extends` to 'inherit' base template.
+### Content template
+When visiting content from a url, it will try to find template in `full` viewmode.(See `template override` below for more about override with viewmode).
 
-Digimaker uses block in templating, meaning base.html defines block and real template fills in value. In example below, base.html defines ``content`` block and is filled in ``article/full.html``
-
-base.html
-```html
-{% raw %}<div class="main">
-    {%block content%}Default body{% endblock %}
-</div>{% endraw %}
-```
-
-In article full view template article/full.html
+An article's page may look like below(under article/full.html)
 ```html
 {% raw %}{% extends "../base.html" %}
 
@@ -67,7 +58,18 @@ In article full view template article/full.html
 {%endblock%}{% endraw %}
 ```
 
->*When visiting content from a url, it will try to find template which matches content's view in `full` viewmode.(See `template override` below for more about override)*
+### Base template
+Base template defines the layout, which is in base.html (eg. web/template/demo/base.html).Content template is invoked when visiting a content page. Content page uses `extends` to 'inherit' base template.
+
+Digimaker uses block in templating, meaning base.html defines block and real template fills in value. In example below, base.html defines ``content`` block and is filled in ``article/full.html``
+
+base.html
+```html
+{% raw %}<div class="main">
+    {%block content%}Default body{% endblock %}
+</div>{% endraw %}
+```
+
 
 ### Template language
 
