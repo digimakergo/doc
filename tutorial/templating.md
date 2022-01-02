@@ -59,15 +59,20 @@ An article's page may look like below(under article/full.html)
 ```
 
 ### Base template
-Base template defines the layout, which is in base.html (eg. web/template/demo/base.html).Content template is invoked when visiting a content page. Content page uses `extends` to 'inherit' base template.
+Base template defines the layout, which is in base.html (eg. web/templates/demo/base.html). Content template is the entry template when visiting a content page and it uses `extends` to 'inherit' base template.
 
 Digimaker uses block in templating, meaning base.html defines block and real template fills in value. In example below, base.html defines ``content`` block and is filled in ``article/full.html``
 
 base.html
 ```html
-{% raw %}<div class="main">
+{% raw %}<html>
+  ...
+<body>
+<div class="main">
     {%block content%}Default body{% endblock %}
-</div>{% endraw %}
+</div>
+</body>
+</html>{% endraw %}
 ```
 
 
