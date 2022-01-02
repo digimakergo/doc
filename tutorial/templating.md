@@ -71,7 +71,7 @@ In article full view template article/full.html
 
 ### Template grammar
 
-For full template language grammar, please vist [Pongo2's page](https://github.com/flosch/pongo2#features)
+The template language is syntax and feature-compatible with (Django 1.7)(https://django.readthedocs.io/en/1.7.x/topics/templates.html). For full template language grammar, please vist [Pongo2's page](https://github.com/flosch/pongo2#features)
 
 ## Template override
 When visiting a content page, Digimaker will try to find template of the content. Below is an template override example(under ``configs/template_override.yaml``) of visiting a folder, 
