@@ -32,8 +32,8 @@ Below is a list of rest api
 | [content/set-priority](#set-priority)| Set priority |
 |**Authorization**|
 | [auth/auth](#login)| Auth to get token to login |
-| [auth/revoke](#logout)| Revoke token to logout |
-| [auth/renew](#renew-access-token)| Renew access token |
+| [auth/token/revoke](#logout)| Revoke token to logout |
+| [auth/token/renew](#renew-access-token)| Renew access token |
 |**User**|
 | [user/current](#get-current-users-information)| 
 | [user/reset-password](#request-reseting-password)| Request reseting password   |
