@@ -66,13 +66,13 @@ A content type example
 
 | key       | Description   | Parameters 
 |:--------- |:---------------------|:----|
-| int  |	Integer. default value is -1(not 0)| | 
 | text  |	Plain text, support mulitline| "multiline": true/false , "max_length":250| 
 | richtext |	Rich text with online editor |	“mode”:”compact/full”
 | select |	Dropdown | "list", eg:{"list": [{“text”: "Apple", "value": "apple" }...]} |
 | radio |	Radio, support 2 options ("1"/"0" - string value) for now. default "-1"(not selected) | "options":["Yes", "No"] |
 | datetime |	Date time |	“dateonly”: true/false
-| container| 	Container |  | 
+| int  |	Integer. default value is -1(not 0)| | 
+| container| 	Container. 'Virtual' field which is a container of sub fields. "children" is used together with "container" | | 
 | checkbox |	Checkbox, value is int 0/1  |	 | 
 | password |	Password |	 | 
 | file | File  |	max_size: <float, eg. 10.0>, max size of the file(mb)(default is 10 if not set). <br /> format:".docx,.pdf", supported file formats | 
