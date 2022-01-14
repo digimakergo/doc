@@ -75,7 +75,7 @@ A content type example
 | container| 	Container |  | 
 | checkbox |	Checkbox, value is int 0/1  |	 | 
 | password |	password |	 | 
-| file | file  |	max_size: <float, eg. 10.0>, max size of the file.  format:".docx,pdf", supported file formats | 
+| file | file  |	max_size: <float, eg. 10.0>, max size of the file.  format:".docx,.pdf", supported file formats | 
 | image | image  | format:".jpg,.png", accepted format. If not set, use all support images | 
 | relation |	Relation  | type: "<content type>" , value: "<field identifier>", editmode: "browse\|select" (by default it's browse if nothing is set)
 | relationlist |
