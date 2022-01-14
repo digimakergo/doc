@@ -78,4 +78,4 @@ A content type example
 | file | File  |	max_size: <float, eg. 10.0>, max size of the file(mb)(default is 10 if not set). <br /> format:".docx,.pdf", supported file formats | 
 | image | Image  | format:".jpg,.png", accepted format. If not set, use all support images | 
 | relation |	Relation  | type: "<content type>" , value: "<field identifier>", editmode: "browse\|select" (by default it's browse if nothing is set)
-| relationlist |
+| relationlist | Relation list, used for multiple relation |
