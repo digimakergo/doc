@@ -74,5 +74,5 @@ A content type example
 | datetime |	Date time |	“dateonly”: true/false
 | container| 	Container |  | 
 | checkbox |	Checkbox, value is int 0/1  |	 | 
-| relation |	Relation  | type: "<content type>" , value: "<field identifier>", editmode: "browse|select" (by default it's browse if nothing is set)
+| relation |	Relation  | type: "<content type>" , value: "<field identifier>", editmode: "browse\|select" (by default it's browse if nothing is set)
 | relationlist |
