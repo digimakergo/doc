@@ -104,4 +104,14 @@ Description: add site path as prefix to the url. If it's '/' the last / will be 
 
 ## Filters in digimaker
 
+See [here](https://github.com/digimakergo/digimaker/blob/master/sitekit/filters/filters.go#L140) for all filters
+
+
+## Macros in digimaker
+By default we have 3 Macros:
+- output_content(content, viewmode): output a content, where viewmode is a string, eg: "block"/"line"
+- output_field(field, content): output a field, where field is the field identifier: eg: "summary". Note: the real outputting code might be defined in override, see [field under override rules](./template-override#field). 
+- output_view: TBA
+
+
 
