@@ -70,9 +70,10 @@ Below are condition for locating field rendering template:
 | contentype           | content type, eg. "article" |
 | site           | site identifier, eg. "eng" |
 
->*Note: You can use variable in the "to" command to simplify rules.
 
->*Note: Field override rules is applied only when output_field is invoked.
+>*Note: You can use variable in the "to" command to simplify rules.*
+
+>*Note: Field override rules is applied only when output_field is invoked.*
 
 ### Example
 
