@@ -109,18 +109,18 @@ See [here](https://github.com/digimakergo/digimaker/blob/master/sitekit/filters/
 
 ## Macros in digimaker
 Macro provides 'function' like operation in template. Here is an example of rendering field using macro:
-```
+```html
 <div class="{{content.ContentType}} frontpage full"> 
-    {{output_field( "summary", content )}}
+   {% raw %} {{output_field( "summary", content )}}{% endraw %}
 </div>
 ```
 
 Here is an example of rendering articles as blocks, without knowing details of how the article will be rendered:
-```
+```html
 <div class="children">
-    {% for child in dm.children(content, "article") %}
+    {% raw %}{% for child in dm.children(content, "article") %}
         {{output_content( child, "block" )}}
-    {%endfor%}
+    {%endfor%}{% endraw %}
 </div>
 ```
 
