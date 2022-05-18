@@ -19,8 +19,9 @@ This is a example of template override in dmdemo project:
 It means all folders in "full" view mode, and field "display_type" is "news" will use "folder/news.html" template
 
 
-## Override conditions
-Below are conditions for location content
+## content_view 
+
+content_view is the override rule for rendering content. Below are conditions for finding template for location content
 
 | Condition        | Description          | 
 |:-------------|:------------------|
@@ -58,3 +59,36 @@ content_view:
 Other typical include conditions can be `viewmode`, `contenttype`, `under`, even `field_<field identifier>` - bacally all override conditions can be used as condition in `include`.
 
 >*Note: The template engine will proceed `include` override files first(in the order of matched file order), then override_template.yaml's rules itself, regardless of where the `include` is placed.*
+
+## Field
+Below are condition for locating field rendering template:
+
+| Condition        | Description          | 
+|:-------------|:------------------|
+| fieldtype           | field type, eg. "text" |
+| field          | field identifier, eg. "summary" |
+| contentype           | content type, eg. "article" |
+| site           | site identifier, eg. "eng" |
+
+>*Note: You can use variable in the "to" command to simplify rules.
+
+>*Note: Field override rules is applied only when output_field is invoked.
+
+### Example
+
+```yaml
+field:
+- contenttype: "article"
+  field: "title"
+  to: fieldtype/article_title.html
+
+- fieldtype: "text"
+  to: fieldtype/text.html
+  
+
+- to: fieldtype/{fieldtype}.html
+```
+
+In the example, the first overrule sets all artille/title to use fieldtype/article_title.html, the second sets all text using fieldtype/text.html, the 3rd uses variable sets all fieldtype uses fieldtype/*.html where * is the field type.
+
+
