@@ -108,10 +108,32 @@ See [here](https://github.com/digimakergo/digimaker/blob/master/sitekit/filters/
 
 
 ## Macros in digimaker
+Macro provides 'function' like operation in template. Here is an example of rendering field using macro:
+```html
+<div class="{{content.ContentType}} frontpage full"> 
+    {{output_field( "summary", content )}}
+</div>
+```
+
+Here is an example of rendering articles as blocks, without knowing details of how the article will be rendered:
+```html
+<div class="children">
+    {% for child in dm.children(content, "article") %}
+        {{output_content( child, "block" )}}
+    {%endfor%}
+</div>
+```
+
+
 By default we have 3 Macros:
-- output_content(content, viewmode): output a content, where viewmode is a string, eg: "block"/"line"
-- output_field(field, content): output a field, where field is the field identifier: eg: "summary". Note: the real outputting code might be defined in override, see [field under override rules](./template-override#field). 
-- output_view: TBA
+
+### output_content(content, viewmode)
+Output a content, where viewmode is a string, eg: "block"/"line"
+
+### output_field(field, content)
+Output a field, where field is the field identifier: eg: "summary". Note: the real outputting code might be defined in override, see [field under override rules](./template-override#field). 
+
+### output_view: TBA
 
 
 
