@@ -65,11 +65,13 @@ Description: return the parent of the content
 #### dm.children
 Parameters: 
 - parent(ContentType)
-- children type: (string)
+- children type (string): eg. "image"
 - [optional]sort by(string): "" if no input
 - [optional]limit(int): 0 if not limit
-- [optional]condition(db.Condition): "" to ignore. Use cond to build condition, which can have and or logic.
+- [optional]condition(db.Condition): "" to ignore. Use cond to build condition, which can have and or logic. For more conditions&examples please visit [here](https://pkg.go.dev/github.com/digimakergo/digimaker/core/db#example-Cond)
 - [optional]offset(int): offset, eg. 10 when it comes to sencond page
+
+
 
 Return: list of content or empty slice of ContentTyper if it has nothing
 
