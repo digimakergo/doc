@@ -63,18 +63,23 @@ Description: return the parent of the content
 ```
 
 #### dm.children
-Parameter: 
-
-content ContentTyper
-
-contentType string
-
-sortBy string
-
-***TBD***
+Parameters: 
+- parent(ContentType)
+- children type: (string)
+- [optional]sort by(string): "" if no input
+- [optional]limit(int): 0 if not limit
+- [optional]condition(db.Condition): use cond to build condition, which can have and or logic
+- [optional]offset(int): offset, eg. 10 when it comes to sencond page
 
 Return: list of content or empty slice of ContentTyper if it has nothing
 
+
+Example:
+```
+{% raw %}
+dm.children(content, "article",  "priority desc, modified asc", 0, cond("title", "22222" ).Or("title", "33333").And("author", 1) )
+{% endraw %}
+```
 
 ### MISC
 
