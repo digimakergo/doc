@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Template functions
+title: Templating
 parent: References
 permalink: /references/template
 nav_order: 9
