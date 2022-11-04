@@ -35,7 +35,7 @@ To know how to set permissions, see [Permission introduction](tutorial/permissio
 Read [Digimaker concepts](tutorial/digimaker-concepts) to understand some design concepts.
 
 More articles:
- - [Use client library(digimaker-ui)](tutorial/digimaker-ui)(tba)
+ - [Use client library(digimaker-ui)](https://digimaker.org/doc/digimaker-ui/)
  - [Extend server side](tutorial/server)(tba)
  - [Online log/debug tool](tutorial/debug)(tba)
 
@@ -44,7 +44,7 @@ More articles:
  - Content types: [contenttype.json](references/contenttype)
  - Permission: [policies.json](references/policies)
  - Template: [Templating API](references/template), [template_override.yaml](references/template-override)
- - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
+ - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](https://digimaker.org/doc/digimaker-ui/)
  - Server side: [Go API](references/go)
  - Configuration: [dm.yaml](references/dm)
 
