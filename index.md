@@ -35,7 +35,7 @@ To know how to set permissions, see [Permission introduction](tutorial/permissio
 Read [Digimaker concepts](tutorial/digimaker-concepts) to understand some design concepts.
 
 More articles:
- - [Use client library(digimaker-ui)](tutorial/digimaker-ui)(tba)
+ - [Use client library(digimaker-ui)](https://digimaker.org/doc/digimaker-ui/)
  - [Extend server side](tutorial/server)(tba)
  - [Online log/debug tool](tutorial/debug)(tba)
 
