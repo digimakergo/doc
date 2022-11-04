@@ -7,37 +7,60 @@ title: Home
 nav_order: 0
 ---
 
-Welcome to Digimaker CMF documentation!
+# Digimaker CMF Documentation
+{: .fs-9 }
+
+Digimaker CMF is a content management framework focusing on simplicity, flexibility and performance.
+
+[Get started](#get-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View on GitHub](https://github.com/digimakergo/digimaker){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+---
+
+## Get started 
 
 ### Installation
-The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project readme has explained code structure and basic apis.
+The simpliest way to install is to get sample code and run: [https://github.com/digimakergo/dmdemo](https://github.com/digimakergo/dmdemo) . The sample project [readme](https://github.com/digimakergo/dmdemo#readme) has explained code structure and basic apis.
 
 
-### Tutorials & articles (tba)
- - [How to develop website](tutorial/)
- - [How to use client library(digimaker-ui) and rest api to develop web app](tutorial/)
- - [How to develop server side(extend rest api, content handler, fieldtype)](tutorial/)
- - [Content model explained & how to configure](tutorial/content-model)
- - [Online log/debug tool](tutorial/)
- - [Authorization explained](tutorial/)
+### Tutorials & articles
+Digimaker CMF can be used to build web site, web application or being embeded to existing system.
+
+Normally you can just configure content model(a json file), then you are able to manage content.   
+
+- If you want to develop website, you can start to [write template](tutorial/templating). 
+- If you want to develop web application, you can check our [rest api](tutorial/rest)
+
+To know how to set permissions, see [Permission introduction](tutorial/permission).
+
+Read [Digimaker concepts](tutorial/digimaker-concepts) to understand some design concepts.
+
+More articles:
+ - [Use client library(digimaker-ui)](tutorial/digimaker-ui)(tba)
+ - [Extend server side](tutorial/server)(tba)
+ - [Online log/debug tool](tutorial/debug)(tba)
 
 
-### [References](references/)
- - Templates: [Templating](references/template)
+### References
+ - Content types: [contenttype.json](references/contenttype)
+ - Permission: [policies.json](references/policies)
+ - Template: [Templating API](references/template), [template_override.yaml](references/template-override)
  - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
  - Server side: [Go API](references/go)
- - Configuration: [dm.yaml](references/dm), [contenttype.json](references/contenttype), [template_override.yaml](references/template-override), [policies.yaml](references/policies)
+ - Configuration: [dm.yaml](references/dm)
 
-### Backend administration(editorial user interface/eui)
+## Content Administration(editorial ui)
 Below is a basic screenshot of eui, which is customizable in tools, display, columns, themes etc, and is extendable for more features.
 
 <img src="https://raw.githubusercontent.com/digimakergo/eui/master/doc/eui-1.png" width="700px" />
 
-[Customize eui](eui/)
+
+## About
+### License
+Digimaker CMF is under MIT license
 
 ### Roadmap
 
-We are evolving so check our [roadmap](roadmap) to know our next step.
+We are evolving so check our [New feature ideas in github project](https://github.com/digimakergo/digimaker/projects) to know our next step.
 
 ### Thanks
 Special thanks to template library [Pongo2](https://github.com/flosch/pongo2) and high perforance DB library [SQL Boiler](https://github.com/volatiletech/sqlboiler). 

@@ -16,110 +16,199 @@ has_doc: true
 {:toc}
 </details>
 
-## Basis
+## Rest API List
+Below is a list of rest api
 
-**Examples**
+| Operation        | Description  | 
+|:-------------|:------------------|
+| **Content**|
+| [content/get](#fetch-a-content)| Fetch a content |
+| [content/tree](#fetch-a-tree)| Fetch a content tree |
+| [content/list](#fetch-content-list)| Fetch content list |
+| [content/create](#create-content)| Create content |
+| [content/move](#move-content)| Move content |
+| [content/update](#update-content)| Update content |
+| [content/delete](#delete-content)| Delete content |
+| [content/set-priority](#set-priority)| Set priority |
+|**Authorization**|
+| [auth/auth](#login)| Auth to get token to login |
+| [auth/token/revoke](#logout)| Revoke token to logout |
+| [auth/token/renew](#renew-access-token)| Renew access token |
+|**User**|
+| [user/current](#get-current-users-information)| 
+| [user/reset-password](#request-reseting-password)| Request reseting password   |
+| [user/resetpassword-confirm](#reset-password)| Confirm reset passwork link |
+| [user/enable](#enabledisable-user)| Enable/Disable user |
+|**Utility**|
+|[util/uploadfile](#util/uploadfile)|Upload file|
+|[util/uploadimage](#util/uploadimage)|Upload image|
 
-Get content by id:
-Request: `/content/get/3`
-Response:
+## Common response
+
+Digimaker CMF will always return a json format. For a successful page it will be like below, where "error" is always false. All th 'real' data will be inside "data"
+
 ```json
 {
-  "cid": 3,
-  "version": 0,
-  "published": 1560534450,
-  "modified": 1615464230,
-  "cuid": "bk1trcli6ekibbmo2cj0",
-  "status": 1,
-  "author": 1,
-  "author_name": "Administrator Admin",
-  "relations": {},
-  "folder_type": "site",
-  "summary": "<p>This is a demo site.</p>",
-  "title": "Demo",
-  "id": 3,
-  ...
+  "error": false,
+  "data": {
+    "cid": 3,
+    "version": 4,
+    "published": 1628163956,
+    "modified": 1628196214
+  }
 }
+
 ```
-Get content list:
-Request: `/content/list/folder?parent=3&level=1&sortby=priority%20desc%3Bmodified%20desc&limit=20&offset=0`
-Response:
+
+For error it will put error information into data and set "error" to true
 ```json
 {
-  "list": [
-    {
-      "cid": 28,
-      "version": 0,
-      "published": 1614682043,
-      "modified": 1614682043,
-      "cuid": "c0v1feuvvhfup2usch5g",
-      "status": 0,
-      "author": 1,
-      "author_name": "Administrator Admin",
-      ...
-    },
-    {
-      "cid": 27,
-      "version": 0,
-      "published": 1614682022,
-      "modified": 1614682022,
-      "cuid": "c0v1f9mvvhfup2usch4g",
-      "status": 0,
-      "author": 1,
-      "author_name": "Administrator Admin",
-      ...
-    }
-  ],
-  "count": 2
+  "error": true,
+  "data": {
+    "code": "10001",
+    "message": "Cann't get content type",
+    "detail": ""
+  }
 }
 ```
 
-## Content fetch
+## API details
 
-### content/get
+### Fetch a content
 
-### content/version
+**Format**
+`content/get/<content type>/<id>`
 
-### content/treemenu
-
-### content/list
-
-## Content operation
-
-### content/create
-
-### content/move
-
-### content/update
-
-### content/delete
-
-### content/setpriority
-
-## Authorization
-### auth/auth
-
-### auth/token/revoke
-
-### auth/token/renew-refreshtoken
-
-### auth/token/renew-accesstoken
+**Result**
+JSON of the content
 
 
-## User
-### user/current
+Example: `content/get/article/1`
 
-### user/resetpassword
 
-### user/resetpassword-confirm
+### Fetch a version
+content/version
 
-### user/enable
+### Fetch a tree
+content/treemenu
 
-## Content model
-### contenttype/get
+### Fetch content list
+Fetch content list, with user's permission considered.
 
-## Utility
-### util/uploadfile
+**Format**
 
-### util/uploadimage
+`content/list/<content type>?<parameters...>`
+  
+**Parameters**
+  
+  | Parameter        |   Example | Description  |
+| ------------- |-------------| -----|
+|  parent    | 3 | parent id of a content. No need if it's non-location content |
+|  level    | 1 | Level under the parent id, 1 means the direct children . No need if it's non-location content |
+|  limit    | 10 | How many for record to fetch |
+|  offset    | 0 | Which position to fetch records |
+|  sortby    | priority desc,id desc | sort by. Support multi fields |
+|  field.*    | field.title | filter by field |  
+|  location.*       | location.priority | filter by location's attribute. eg. priority, publish. modified  |
+  
+
+**Result**
+
+  List of the content like below
+```json
+{
+  "list": 
+     [{"title":"Test", 
+       "body":"<p>Test body</p>"}
+     ],   
+   "count": 4
+}  
+```
+
+### Create content  
+**Format**
+
+url: `content/create/<content type>/<parent location id>`, with a json as request body.  Note: non-location content doesn't need parent location id.
+
+Here is a body example, where title&body are field identifiers
+  ```json
+{
+  "title":"Test", 
+  "body":"Test body"
+ }
+  ```
+**Return**
+
+
+ 
+  
+
+### Move content
+**Format:** content/move
+
+### Update content
+  
+**Format**
+url: `content/update/<location id>` or `content/update/<content type>/<content id>`. Put json as request body.  
+  
+Here is a body example, where title&body are field identifiers
+  ```json
+{ "title":"Test",
+  "body":"Test body"}
+ ```
+
+### Delete content
+
+Format:
+url: `content/delete?id=<location id>` or `content/delete?type=<content type>&id=<content id>`.
+  
+### Set priority
+content/setpriority
+
+### Login
+**Format:** auth/auth
+**Method:** POST
+
+**Body:** 
+
+```json
+{ "username":"<username or email>",
+  "password":"<password>"}
+ ```
+ 
+**Response**:
+
+Access token and refresh token, example like below.
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzE1MzgzNDcsInVzZXJfaWQiOjEsInVzZXJfbmFtZSI6IkFkbWluaXN0cmF0b3IgQWRtaW4ifQ.VV3yJW7q5oZ4PVMj8d-2m224MmOP7PG3QJCWPL3mv0w",
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzE1NDYxNDcsImd1aWQiOiI4MWZjZjYzMC02ZWFhLTQwMjctOGI1Zi1kZjc2YjgwY2JjNDgiLCJ1c2VyX2lkIjoxfQ.DegXqhzWML1sgENCnZVjC_udW77_m_rkV0Us7-CcP-M"
+}
+```
+
+
+### Logout
+**Format** auth/token/revoke
+
+### Renew access token
+**Format**auth/token/renew
+
+
+### Get current user's information
+**Format** user/current
+
+### Request reseting password
+user/resetpassword
+
+### Reset password
+user/resetpassword-confirm
+
+### Enable/Disable user
+**Format** user/enable
+
+### Upload a file
+**Format**util/uploadfile
+
+### Upload an image
+**Format** util/uploadimage
 
