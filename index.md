@@ -44,7 +44,7 @@ More articles:
  - Content types: [contenttype.json](references/contenttype)
  - Permission: [policies.json](references/policies)
  - Template: [Templating API](references/template), [template_override.yaml](references/template-override)
- - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](references/digimaker-ui)
+ - Client/Rest API: [Rest API](references/rest), [Client library(digimaker-ui)](https://digimaker.org/doc/digimaker-ui/)
  - Server side: [Go API](references/go)
  - Configuration: [dm.yaml](references/dm)
 
