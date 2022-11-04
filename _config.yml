@@ -39,6 +39,10 @@ plugins:
 
 color_scheme: digimaker
 
+nav_external_links:
+  - title: digimaker-ui
+    url: https://digimaker.org/doc/digimaker-ui
+
 aux_links:
   "digimaker.org":
     - "http://digimaker.org"
