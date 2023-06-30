@@ -13,7 +13,7 @@ This is a example of template override in dmdemo project:
 ```yaml
 - contenttype: folder
   viewmode: full
-  field/display_type: news
+  field\/display_type: news
   to: folder/news.html
 ```
 It means all folders in "full" view mode, and field "display_type" is "news" will use "folder/news.html" template
@@ -31,7 +31,7 @@ content_view is the override rule for rendering content. Below are conditions fo
 | under           | matches content which are under this value(id) |
 | level           | level under site root(1 is directly under) |
 | contenttype | content type of the content |
-| field/\<field identifier\>   | matches fields value. Support fieldtypes: radion, checkbox, select       |
+| field\/\<field identifier\>   | matches fields value. Support fieldtypes: radion, checkbox, select       |
 
 
 ## Include other override files
@@ -56,7 +56,7 @@ content_view:
     to: folder/frontpage.html
 ```
 
-Other typical include conditions can be `viewmode`, `contenttype`, `under`, even `field/<field identifier>` - bacally all override conditions can be used as condition in `include`.
+Other typical include conditions can be `viewmode`, `contenttype`, `under`, even `field\/<field identifier>` - bacally all override conditions can be used as condition in `include`.
 
 >*Note: The template engine will proceed `include` override files first(in the order of matched file order), then override_template.yaml's rules itself, regardless of where the `include` is placed.*
 
