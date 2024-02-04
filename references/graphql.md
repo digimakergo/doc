@@ -22,7 +22,14 @@ Below is a list of GraphQL api
 ### Query
 
 ### Create
-
+```
+mutation{
+       createArticle(createData:[{parent: 3,data:{ title:"Test" } }] ){
+           location{id},
+           id
+       }
+     }
+```
 ### Update
 ```
 mutation{
