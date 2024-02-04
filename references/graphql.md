@@ -21,20 +21,28 @@ Below is a list of GraphQL api
 
 ### Query
 
+```
+query{
+  article{
+    id
+  }
+}
+```
+
 ### Create
 ```
 mutation{
-       createArticle(createData:[{parent: 3,data:{ title:"Test" } }] ){
+    createArticle(createData:[{parent: 3,data:{ title:"Test" } }] ){
            location{id},
            id
-       }
-     }
+    }
+}
 ```
 ### Update
 ```
 mutation{
-	updateArticle(updateData:[{id:18, data:{title:"Test2"}}]){
+    updateArticle(updateData:[{id:18, data:{title:"Test2"}}]){
 		id
-	}
+    }
 }
 ```
